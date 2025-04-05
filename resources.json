@@ -1,0 +1,206 @@
+{
+  "categories": [
+    {
+      "name": "Unity Editor",
+      "subcategories": [
+        {
+          "id": "editor-2d",
+          "name": "2D Tools",
+          "resources": [
+            {
+              "title": "Dual-Grid Tile System",
+              "url": "https://youtu.be/jEWFSv3ivTg?si=-xv_DvwZa7uldMBB"
+            }
+          ]
+        },
+        {
+          "id": "editor-3d",
+          "name": "3D Tools",
+          "resources": [
+            {
+              "title": "Dynamic Bones",
+              "url": "https://github.com/OneYoungMean/Automatic-DynamicBone"
+            }
+          ]
+        },
+        {
+          "id": "editor-text",
+          "name": "Text Tools",
+          "resources": [
+            {
+              "title": "Node-Based Dialog System",
+              "url": "https://github.com/merpheus-dev/NodeBasedDialogueSystem"
+            }
+          ]
+        },
+        {
+          "id": "editor-imgui",
+          "name": "IMGUI",
+          "resources": [
+            {
+              "title": "Unity Editor Icons",
+              "url": "https://github.com/halak/unity-editor-icons"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Shaders",
+      "subcategories": [
+        {
+          "id": "shader-libraries",
+          "name": "Shader Libraries",
+          "resources": [
+            {
+              "title": "Godot Shader Library",
+              "url": "https://godotshaders.com"
+            },
+            {
+              "title": "Advanced Computer Graphics",
+              "url": "https://cglearn.eu/pub/advanced-computer-graphics"
+            },
+            {
+              "title": "X-PostProcessing Library",
+              "url": "https://github.com/QianMo/X-PostProcessing-Library"
+            },
+            {
+              "title": "Zoroiscrying Library",
+              "url": "https://github.com/Zoroiscrying/Unity_Shader_Library_Zoroiscrying"
+            },
+            {
+              "title": "NVIDIA CG Documentation",
+              "url": "https://developer.download.nvidia.com/cg/"
+            }
+          ]
+        },
+        {
+          "id": "shader-outline",
+          "name": "Outline",
+          "resources": [
+            {
+              "title": "Pixel Perfect Outline",
+              "url": "https://www.videopoetics.com/tutorials/pixel-perfect-outline-shaders-unity"
+            },
+            {
+              "title": "Rendering Outline",
+              "url": "https://ameye.dev/notes/rendering-outlines"
+            },
+            {
+              "title": "Robinseibold URP Outlines",
+              "url": "https://github.com/Robinseibold/Unity-URP-Outlines"
+            }
+          ]
+        },
+        {
+          "id": "shader-npr",
+          "name": "NPR",
+          "resources": [
+            {
+              "title": "NPR_Lab Library",
+              "url": "https://github.com/candycat1992/NPR_Lab"
+            },
+            {
+              "title": "Mihayou's technical director: cartoon rendering",
+              "url": "https://zhuanlan.zhihu.com/p/37001473"
+            },
+            {
+              "title": "[01] Cartoon Rendering from Scratch",
+              "url": "https://zhuanlan.zhihu.com/p/109101851"
+            },
+            {
+              "title": "[02] Cartoon Rendering from Scratch - Shading Part 1",
+              "url": "https://zhuanlan.zhihu.com/p/110025903"
+            },
+            {
+              "title": "[02] Cartoon Rendering from Scratch - Shading Part 2",
+              "url": "https://zhuanlan.zhihu.com/p/111633226"
+            },
+            {
+              "title": "[04] Cartoon Rendering from Scratch - PBR Article",
+              "url": "https://zhuanlan.zhihu.com/p/115238808"
+            }
+          ]
+        },
+        {
+          "id": "shader-dithering",
+          "name": "Dithering",
+          "resources": [
+            {
+              "title": "Dithering Shading",
+              "url": "https://medium.com/the-bkpt/dithered-shading-tutorial-29f57d06ac39"
+            },
+            {
+              "title": "Dithering Tutorial",
+              "url": "https://www.ronja-tutorials.com/post/042-dithering"
+            }
+          ]
+        },
+        {
+          "id": "shader-colors",
+          "name": "Colors",
+          "resources": [
+            {
+              "title": "Blackbody Chart",
+              "url": "http://www.vendian.org/mncharity/dir3/blackbody"
+            },
+            {
+              "title": "Color Checker Reference",
+              "url": "https://github.com/colour-science/colour-nuke/tree/master/colour_nuke/resources/images/ColorChecker2014"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Optimization",
+      "subcategories": [
+        {
+          "id": "opt-cpu",
+          "name": "CPU",
+          "resources": [
+            {
+              "title": "CPU Optimization Resources",
+              "url": "#"
+            }
+          ]
+        },
+        {
+          "id": "opt-gpu",
+          "name": "GPU",
+          "resources": [
+            {
+              "title": "GPU Optimization Resources",
+              "url": "#"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Programming",
+      "subcategories": [
+        {
+          "id": "prog-systems",
+          "name": "Systems",
+          "resources": [
+            {
+              "title": "Programming Systems Resources",
+              "url": "#"
+            }
+          ]
+        },
+        {
+          "id": "prog-patterns",
+          "name": "Patterns",
+          "resources": [
+            {
+              "title": "Programming Patterns Resources",
+              "url": "#"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

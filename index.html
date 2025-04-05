@@ -1,169 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Game Dev Resources</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    .category {
-      margin-bottom: 1.5rem;
-    }
-    .toggle {
-      cursor: pointer;
-      background: #eee;
-      border: none;
-      padding: 0.5rem 1rem;
-      font-size: 1.1rem;
-      width: 100%;
-      text-align: left;
-      border-radius: 6px;
-      margin-top: 1rem;
-      margin-bottom: 0.5rem;
-    }
-    .content {
-      display: none;
-      padding-left: 1rem;
-      margin-bottom: 1rem;
-    }
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
-  </style>
-</head>
-<body>
-
-<h1>🎮 Game Dev Resources</h1>
-<p>A categorized collection of tools, libraries, and references for Unity, shaders, and optimization.</p>
-
-<!-- Category: Editor -->
-<div class="category">
-  <button class="toggle">🛠 Editor</button>
-  <div class="content">
-    <button class="toggle">2D Tools</button>
-    <div class="content">
-      <ul><li>Dual-Grid Tile System</li></ul>
-    </div>
-
-    <button class="toggle">3D Tools</button>
-    <div class="content">
-      <ul><li>Dynamic Bones</li></ul>
-    </div>
-
-    <button class="toggle">Text Tools</button>
-    <div class="content">
-      <ul><li>Node-Based Dialog System</li></ul>
-    </div>
-
-    <button class="toggle">IMGUI</button>
-    <div class="content">
-      <ul><li>Unity Editor Icons</li></ul>
-    </div>
-  </div>
-</div>
-
-<!-- Category: Shaders -->
-<div class="category">
-  <button class="toggle">🎨 Shaders</button>
-  <div class="content">
-    <button class="toggle">Shader Libraries</button>
-    <div class="content">
-      <ul>
-        <li><a href="https://github.com/GDquest/godot-shaders">Godot Shader Library</a></li>
-        <li><a href="https://github.com/matiasgoldberg/ACG">Advanced Computer Graphics - Tutorials</a></li>
-        <li><a href="https://github.com/NPR-Lab/NPR-Lib">NPR_Lab</a></li>
-        <li><a href="https://github.com/QianMo/X-PostProcessing-Library">X-PostProcessing Library</a></li>
-        <li><a href="https://github.com/Zoroiscrying/ZoroShader">Zoroiscrying Library</a></li>
-      </ul>
-    </div>
-
-    <button class="toggle">Outline</button>
-    <div class="content">
-      <ul>
-        <li><a href="https://github.com/IronWarrior/UnityOutlineShader">Pixel Perfect Outline</a></li>
-        <li><a href="https://github.com/ColinLeung-NiloCat/UnityURPOutline">Rendering Outline</a></li>
-        <li><a href="https://github.com/robinseibold/urp-outline-shader">Robinseibold URP Outlines</a></li>
-      </ul>
-    </div>
-
-    <button class="toggle">Dithering</button>
-    <div class="content">
-      <ul>
-        <li><a href="https://github.com/keijiro/KinoBokeh">Dithering Shading</a></li>
-        <li><a href="https://www.alanzucconi.com/2016/07/01/dithering-part-1/">Dithering Tutorial</a></li>
-      </ul>
-    </div>
-
-    <button class="toggle">NPR (Non-Photorealistic Rendering)</button>
-    <div class="content">
-      <ul>
-        <li><a href="https://zhuanlan.zhihu.com/p/37001473">NPR Techniques</a></li>
-        <li><a href="https://zhuanlan.zhihu.com/p/110025903">Stylized Rendering</a></li>
-        <li><a href="https://zhuanlan.zhihu.com/p/95986273">Cel Shading Basics</a></li>
-        <li><a href="https://zhuanlan.zhihu.com/p/31194204">Rendering Pipeline Analysis</a></li>
-      </ul>
-    </div>
-
-    <button class="toggle">Colors</button>
-    <div class="content">
-      <ul>
-        <li><a href="https://www.vendian.org/mncharity/dir3/blackbody/">Blackbody Radiation Chart</a></li>
-        <li><a href="https://www.babelcolor.com/colorchecker.htm">Color Checker Reference</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<!-- Category: Programming -->
-<div class="category">
-  <button class="toggle">💻 Programming</button>
-  <div class="content">
-    <ul>
-      <li>_(Add programming libraries, systems, or patterns here)_</li>
-    </ul>
-  </div>
-</div>
-
-<!-- Category: Optimization -->
-<div class="category">
-  <button class="toggle">🚀 Optimization</button>
-  <div class="content">
-    <ul>
-      <li>_(Add profiling tools, optimization tips, or best practices here)_</li>
-    </ul>
-  </div>
-</div>
-
-<script>
-  // Expand/collapse behavior
-  document.querySelectorAll('.toggle').forEach(button => {
-    button.addEventListener('click', () => {
-      const content = button.nextElementSibling;
-      if (content && content.classList.contains('content')) {
-        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Essential GameDev Resources</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'dark-bg': '#1e1e1e',
+              'sidebar-bg': '#121212',
+              'hover-bg': '#2a2a2a',
+            }
+          }
+        }
       }
-    });
-  });
-</script>
-
-</body>
+    </script>
+  </head>
+  <body class="m-0 font-sans flex bg-[#1e1e1e] text-slate-300">
+    <!-- Sidebar -->
+    <aside class="w-[260px] bg-[#121212] h-screen p-4 box-border overflow-y-auto fixed">
+      <h2 class="text-base mb-4 text-slate-400">RESOURCES</h2>
+      
+      <!-- Home Link -->
+      <div class="mb-4">
+        <a href="#home" id="home-link" class="flex items-center text-white bg-[#2a2a2a] p-2 rounded hover:bg-[#3a3a3a] transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 mr-2" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+          </svg>
+          Home
+        </a>
+      </div>
+      
+      <div id="sidebar-categories">
+        <!-- Categories will be generated by JavaScript -->
+        <div id="sidebar-loading" class="text-slate-400">Loading...</div>
+      </div>
+    </aside>
+    
+    <!-- Main content -->
+    <main class="flex-1 p-8 bg-[#1e1e1e] overflow-y-auto h-screen ml-[260px]">
+      <div id="loading" class="text-center p-8 text-lg text-slate-400">Loading resources...</div>
+      <div id="error-message" class="text-center p-8 text-lg text-red-400 hidden">Failed to load resources. Please check your connection or try again later.</div>
+      
+      <!-- Home Section -->
+      <section id="home" class="content-section">
+        <div class="mb-6">
+          <h1 class="text-3xl text-white mb-2">🎮 Essential GameDev Resources</h1>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-[#121212] rounded-lg p-6 shadow-lg">
+            <h2 class="text-xl text-[#adffef] mb-4">Welcome</h2>
+            <p>This collection provides curated resources for game developers, organized by category and subcategory for easy navigation. The resources were taken during the active development of tools and games. Many thanks to the authors of these resources!</p>
+            <p class="mb-4">The resources were taken during the active development of tools and games. Many thanks to the authors of these resources!</p>
+            <p class="underline">Select a category from the sidebar to explore resources for Unity, shaders, optimization, and more.</p>
+          </div>
+          
+          <div id="updates-container" class="bg-[#121212] rounded-lg p-6 shadow-lg">
+            <h2 class="text-xl text-[#adffef] mb-4">Latest Updates</h2>
+            <ul id="updates-list" class="space-y-3"></ul>
+            <!-- Content will be generated by JavaScript -->
+          </div>
+        </div>
+      </section>
+      
+      <div id="content-sections">
+        <!-- Content sections will be generated by JavaScript -->
+      </div>
+    </main>
+    
+    <script src="app.js"></script>
+  </body>
 </html>
