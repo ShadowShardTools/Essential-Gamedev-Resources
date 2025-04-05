@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Game Dev Resources</title>
   <style>
     body {
@@ -14,11 +14,32 @@
       max-width: 800px;
       margin: auto;
     }
-    h1, h2, h3 {
-      color: #111;
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .category {
+      margin-bottom: 1.5rem;
+    }
+    .toggle {
+      cursor: pointer;
+      background: #eee;
+      border: none;
+      padding: 0.5rem 1rem;
+      font-size: 1.1rem;
+      width: 100%;
+      text-align: left;
+      border-radius: 6px;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .content {
+      display: none;
+      padding-left: 1rem;
+      margin-bottom: 1rem;
     }
     a {
-      color: #0066cc;
+      color: #007acc;
       text-decoration: none;
     }
     a:hover {
@@ -27,101 +48,122 @@
     ul {
       padding-left: 1.2rem;
     }
-    section {
-      margin-bottom: 2rem;
-    }
-    .category {
-      border-left: 4px solid #007acc;
-      padding-left: 1rem;
-      margin-top: 2rem;
-    }
   </style>
 </head>
 <body>
 
-  <h1>🎮 Game Dev Resources</h1>
-  <p>A categorized collection of tools, libraries, and references for Unity, shaders, and optimization.</p>
+<h1>🎮 Game Dev Resources</h1>
+<p>A categorized collection of tools, libraries, and references for Unity, shaders, and optimization.</p>
 
-  <!-- Editor -->
-  <section class="category">
-    <h2>🛠 Editor</h2>
-    <h3>2D Tools</h3>
-    <ul>
-      <li>Dual-Grid Tile System</li>
-    </ul>
+<!-- Category: Editor -->
+<div class="category">
+  <button class="toggle">🛠 Editor</button>
+  <div class="content">
+    <button class="toggle">2D Tools</button>
+    <div class="content">
+      <ul><li>Dual-Grid Tile System</li></ul>
+    </div>
 
-    <h3>3D Tools</h3>
-    <ul>
-      <li>Dynamic Bones</li>
-    </ul>
+    <button class="toggle">3D Tools</button>
+    <div class="content">
+      <ul><li>Dynamic Bones</li></ul>
+    </div>
 
-    <h3>Text Tools</h3>
-    <ul>
-      <li>Node-Based Dialog System</li>
-    </ul>
+    <button class="toggle">Text Tools</button>
+    <div class="content">
+      <ul><li>Node-Based Dialog System</li></ul>
+    </div>
 
-    <h3>IMGUI</h3>
-    <ul>
-      <li>Unity Editor Icons</li>
-    </ul>
-  </section>
+    <button class="toggle">IMGUI</button>
+    <div class="content">
+      <ul><li>Unity Editor Icons</li></ul>
+    </div>
+  </div>
+</div>
 
-  <!-- Shaders -->
-  <section class="category">
-    <h2>🎨 Shaders</h2>
+<!-- Category: Shaders -->
+<div class="category">
+  <button class="toggle">🎨 Shaders</button>
+  <div class="content">
+    <button class="toggle">Shader Libraries</button>
+    <div class="content">
+      <ul>
+        <li><a href="https://github.com/GDquest/godot-shaders">Godot Shader Library</a></li>
+        <li><a href="https://github.com/matiasgoldberg/ACG">Advanced Computer Graphics - Tutorials</a></li>
+        <li><a href="https://github.com/NPR-Lab/NPR-Lib">NPR_Lab</a></li>
+        <li><a href="https://github.com/QianMo/X-PostProcessing-Library">X-PostProcessing Library</a></li>
+        <li><a href="https://github.com/Zoroiscrying/ZoroShader">Zoroiscrying Library</a></li>
+      </ul>
+    </div>
 
-    <h3>Shader Libraries</h3>
-    <ul>
-      <li><a href="https://github.com/GDquest/godot-shaders" target="_blank">Godot Shader Library</a></li>
-      <li><a href="https://github.com/matiasgoldberg/ACG" target="_blank">Advanced Computer Graphics - Tutorials</a></li>
-      <li><a href="https://github.com/NPR-Lab/NPR-Lib" target="_blank">NPR_Lab - NPR Library</a></li>
-      <li><a href="https://github.com/QianMo/X-PostProcessing-Library" target="_blank">X-PostProcessing Library</a></li>
-      <li><a href="https://github.com/Zoroiscrying/ZoroShader" target="_blank">Zoroiscrying Library</a></li>
-    </ul>
+    <button class="toggle">Outline</button>
+    <div class="content">
+      <ul>
+        <li><a href="https://github.com/IronWarrior/UnityOutlineShader">Pixel Perfect Outline</a></li>
+        <li><a href="https://github.com/ColinLeung-NiloCat/UnityURPOutline">Rendering Outline</a></li>
+        <li><a href="https://github.com/robinseibold/urp-outline-shader">Robinseibold URP Outlines</a></li>
+      </ul>
+    </div>
 
-    <h3>Outline</h3>
-    <ul>
-      <li><a href="https://github.com/IronWarrior/UnityOutlineShader" target="_blank">Pixel Perfect Outline</a></li>
-      <li><a href="https://github.com/ColinLeung-NiloCat/UnityURPOutline" target="_blank">Rendering Outline</a></li>
-      <li><a href="https://github.com/robinseibold/urp-outline-shader" target="_blank">Robinseibold URP Outlines</a></li>
-    </ul>
+    <button class="toggle">Dithering</button>
+    <div class="content">
+      <ul>
+        <li><a href="https://github.com/keijiro/KinoBokeh">Dithering Shading</a></li>
+        <li><a href="https://www.alanzucconi.com/2016/07/01/dithering-part-1/">Dithering Tutorial</a></li>
+      </ul>
+    </div>
 
-    <h3>Dithering</h3>
-    <ul>
-      <li><a href="https://github.com/keijiro/KinoBokeh" target="_blank">Dithering Shading</a></li>
-      <li><a href="https://www.alanzucconi.com/2016/07/01/dithering-part-1/" target="_blank">Dithering Tutorial</a></li>
-    </ul>
+    <button class="toggle">NPR (Non-Photorealistic Rendering)</button>
+    <div class="content">
+      <ul>
+        <li><a href="https://zhuanlan.zhihu.com/p/37001473">NPR Techniques</a></li>
+        <li><a href="https://zhuanlan.zhihu.com/p/110025903">Stylized Rendering</a></li>
+        <li><a href="https://zhuanlan.zhihu.com/p/95986273">Cel Shading Basics</a></li>
+        <li><a href="https://zhuanlan.zhihu.com/p/31194204">Rendering Pipeline Analysis</a></li>
+      </ul>
+    </div>
 
-    <h3>NPR (Non-Photorealistic Rendering)</h3>
-    <ul>
-      <li><a href="https://zhuanlan.zhihu.com/p/37001473" target="_blank">Intro to NPR Techniques (1)</a></li>
-      <li><a href="https://zhuanlan.zhihu.com/p/110025903" target="_blank">Stylized Rendering (2)</a></li>
-      <li><a href="https://zhuanlan.zhihu.com/p/95986273" target="_blank">Cel Shading Basics (3)</a></li>
-      <li><a href="https://zhuanlan.zhihu.com/p/31194204" target="_blank">Rendering Pipeline Analysis (4)</a></li>
-    </ul>
+    <button class="toggle">Colors</button>
+    <div class="content">
+      <ul>
+        <li><a href="https://www.vendian.org/mncharity/dir3/blackbody/">Blackbody Radiation Chart</a></li>
+        <li><a href="https://www.babelcolor.com/colorchecker.htm">Color Checker Reference</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
 
-    <h3>Colors</h3>
-    <ul>
-      <li><a href="https://www.vendian.org/mncharity/dir3/blackbody/" target="_blank">Blackbody Radiation Chart</a></li>
-      <li><a href="https://www.babelcolor.com/colorchecker.htm" target="_blank">Color Checker Reference</a></li>
-    </ul>
-  </section>
-
-  <!-- Programming -->
-  <section class="category">
-    <h2>💻 Programming</h2>
+<!-- Category: Programming -->
+<div class="category">
+  <button class="toggle">💻 Programming</button>
+  <div class="content">
     <ul>
       <li>_(Add programming libraries, systems, or patterns here)_</li>
     </ul>
-  </section>
+  </div>
+</div>
 
-  <!-- Optimization -->
-  <section class="category">
-    <h2>🚀 Optimization</h2>
+<!-- Category: Optimization -->
+<div class="category">
+  <button class="toggle">🚀 Optimization</button>
+  <div class="content">
     <ul>
       <li>_(Add profiling tools, optimization tips, or best practices here)_</li>
     </ul>
-  </section>
+  </div>
+</div>
+
+<script>
+  // Expand/collapse behavior
+  document.querySelectorAll('.toggle').forEach(button => {
+    button.addEventListener('click', () => {
+      const content = button.nextElementSibling;
+      if (content && content.classList.contains('content')) {
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+      }
+    });
+  });
+</script>
 
 </body>
 </html>
