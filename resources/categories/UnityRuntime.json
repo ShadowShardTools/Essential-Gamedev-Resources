@@ -18,14 +18,57 @@
               "description": "A NuGet Package Manager for Unity."
             },
             {
-              "title": "Crashkonijn Unity GOAP",
-              "url": "https://github.com/crashkonijn/GOAP",
-              "description": "A robust, multi-threaded Goal Oriented Action Planning (GOAP) system designed for Unity, empowering developers to create complex AI behaviors with ease."
-            },
-            {
               "title": "Starikcetin Eflatun.SceneReference",
               "url": "https://github.com/starikcetin/Eflatun.SceneReference",
               "description": "Unity Scene References for Runtime and Editor. Strongly typed, robust, and reliable. Provides GUID, Path, Build Index, Name, and Address."
+            },
+            {
+              "title": "Open UPM CLI",
+              "url": "https://github.com/openupm/openupm-cli#openupm-cli",
+              "description": "The command-line tool to maintain the Unity manifest file for 3rd-party upm registries, offering a similar but lighter experience like npm or yarn for Node.js."
+            }
+          ]
+        },
+        {
+          "id": "unity-runtime-ingame-ai",
+          "name": "In-Game AI",
+          "resources": [
+            {
+              "title": "Crashkonijn Unity GOAP",
+              "url": "https://github.com/crashkonijn/GOAP",
+              "description": "A robust, multi-threaded Goal Oriented Action Planning (GOAP) system designed for Unity, empowering developers to create complex AI behaviors with ease."
+            }
+          ]
+        },
+        {
+          "id": "unity-runtime-async",
+          "name": "Async Programming",
+          "resources": [
+            {
+              "title": "UniTask",
+              "url": "https://github.com/Cysharp/UniTask",
+              "description": "Provides an efficient allocation free async/await integration for Unity."
+            }
+          ]
+        },
+        {
+          "id": "unity-runtime-dependency-injection",
+          "name": "Dependency Injection",
+          "resources": [
+            {
+              "title": "VContainer",
+              "url": "https://github.com/hadashiA/VContainer",
+              "description": "The extra fast, feature full, Dependency Injection library running on Unity Game Engine."
+            },
+            {
+              "title": "Extenject [Deprecated]",
+              "url": "https://github.com/Mathijs-Bakker/Extenject",
+              "description": "Old, but still useful, dependency injection framework for Unity; industrial standard."
+            },
+            {
+              "title": "Reflex",
+              "url": "https://github.com/gustavopsantos/Reflex",
+              "description": "Blazing fast, minimal but complete(except of il2cpp problems) dependency injection library for Unity."
             }
           ]
         },
