@@ -28,23 +28,29 @@ Contributions are welcome! To contribute:
 
 ```
 /
-├── index.html          # Main HTML file
-├── app.js              # JavaScript functionality
+/
+├── index.html                  # Main HTML file for the application
+├── app.js                       # JavaScript file for functionality
 ├── resources
-    ├── categories
-        ├── CSharpProgramming.json
-        ├── GeneralShaders.json
-        ├── ScreenSpaceShaders.json
-        ├── Sounds.json
-        ├── Textures.json
-        ├── UI-UX.json
-        ├── UnityEditor.json
-        ├── UnityRuntime.json
-        └── VFX.json
-    ├── images
-        └── ShadowShardTools_Logo_128x128.png
-    └── categories-list.json 
-└── updates.json        # Latest updates data
+│   ├── categories              # Directory for resource categories
+│   │   ├── CSharpProgramming.json
+│   │   ├── GeneralShaders.json
+│   │   ├── ScreenSpaceShaders.json
+│   │   ├── Sounds.json
+│   │   ├── Textures.json
+│   │   ├── UI-UX.json
+│   │   ├── UnityEditor.json
+│   │   ├── UnityRuntime.json
+│   │   └── VFX.json
+│   │
+│   ├── images                  # Images folder
+│   │   └── ShadowShardTools_Logo_128x128.png
+│   │
+│   └── categories-list.json    # List of available categories
+│
+├── updates.json                # Data for the latest updates (potentially dynamic)
+├── LICENSE.md                  # MIT License file
+└── README.md                   # Optional: A README for project overview and setup
 ```
 
 ## 📝 Customizing Resources
