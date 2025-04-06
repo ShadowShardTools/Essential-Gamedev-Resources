@@ -28,9 +28,8 @@ Contributions are welcome! To contribute:
 
 ```
 /
-/
 ├── index.html                  # Main HTML file for the application
-├── app.js                       # JavaScript file for functionality
+├── app.js                      # JavaScript file for functionality
 ├── resources
 │   ├── categories              # Directory for resource categories
 │   │   ├── CSharpProgramming.json
