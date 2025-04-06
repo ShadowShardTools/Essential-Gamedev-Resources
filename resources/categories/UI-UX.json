@@ -1,0 +1,47 @@
+{
+    "categories": [
+        {
+            "name": "UI-UX",
+            "subcategories": [
+                {
+                    "id": "ui-ux-references",
+                    "name": "References",
+                    "resources": [
+                        {
+                            "title": "Game UI Database",
+                            "url": "https://www.gameuidatabase.com/",
+                            "description": "The Ultimate reference tool for game interface designers."
+                        }
+                    ]
+                },
+                {
+                    "id": "ui-ux-svg-libraries",
+                    "name": "SVG Libraries",
+                    "resources": [
+                        {
+                            "title": "SVG Repo",
+                            "url": "https://www.svgrepo.com/",
+                            "description": "Search, explore and edit the best-fitting free icons or vectors for your projects using a wide variety vector library."
+                        },
+                        {
+                            "title": "Flaticon",
+                            "url": "https://www.flaticon.com/",
+                            "description": "Download Free Icons and Stickers for your projects. Resources made by and for designers. PNG, SVG, EPS, PSD and CSS formats."
+                        }
+                    ]
+                },
+                {
+                    "id": "ui-ux-color-generators",
+                    "name": "Color Generators",
+                    "resources": [
+                        {
+                            "title": "MyColor Space",
+                            "url": "https://mycolor.space/",
+                            "description": "Generate nice Color Palettes."
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

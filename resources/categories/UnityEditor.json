@@ -1,0 +1,74 @@
+{
+  "categories": [
+    {
+      "name": "Unity Editor",
+      "subcategories": [
+        {
+          "id": "editor-2d",
+          "name": "2D Tools",
+          "resources": [
+            {
+              "title": "Dual-Grid Tile System",
+              "url": "https://youtu.be/jEWFSv3ivTg?si=-xv_DvwZa7uldMBB",
+              "description": "Dual-Grid Tile system for Unity and Godot by jess::codes."
+            }
+          ]
+        },
+        {
+          "id": "editor-3d",
+          "name": "3D Tools",
+          "resources": [
+            {
+              "title": "Dynamic Bones",
+              "url": "https://github.com/OneYoungMean/Automatic-DynamicBone",
+              "description": "Unity bone cloth spring system."
+            }
+          ]
+        },
+        {
+          "id": "editor-text",
+          "name": "Text Tools",
+          "resources": [
+            {
+              "title": "Node-Based Dialog System",
+              "url": "https://github.com/merpheus-dev/NodeBasedDialogueSystem",
+              "description": "This is a node-based visual narrative flow creation tool that uses Unity's GraphView API."
+            },
+            {
+              "title": "AlicanHasirci TextTween",
+              "url": "https://github.com/AlicanHasirci/TextTween",
+              "description": "TextTween is a lightweight Unity library designed to animate TextMesh Pro (TMP) texts with high performance."
+            },
+            {
+              "title": "Luca3317 TMP Effects",
+              "url": "https://github.com/Luca3317/TMPEffects",
+              "description": "Easily animate Unity TMP text and apply other effects with custom tags."
+            }
+          ]
+        },
+        {
+          "id": "editor-imgui",
+          "name": "IMGUI",
+          "resources": [
+            {
+              "title": "Unity Editor Icons",
+              "url": "https://github.com/halak/unity-editor-icons",
+              "description": "Unity Editor Built-in Icons."
+            }
+          ]
+        },
+        {
+          "id": "editor-textures",
+          "name": "Texture Tools",
+          "resources": [
+            {
+              "title": "Baking shaders",
+              "url": "https://www.ronja-tutorials.com/post/030-baking-shaders",
+              "description": "Baking shaders into textures tutorial."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
