@@ -5,21 +5,21 @@ let currentSelected = null;
 function renderSidebar(data) {
   const sidebarContainer = document.getElementById('sidebar-categories');
   sidebarContainer.innerHTML = ''; // Clear loading message
-  
+
   data.categories.forEach(category => {
     const categoryDiv = document.createElement('div');
     categoryDiv.className = 'mb-2';
-    
+
     const categoryTitle = document.createElement('div');
     categoryTitle.className = 'flex items-center justify-between cursor-pointer p-2 bg-[#1e1e1e] rounded hover:bg-[#2a2a2a] font-medium text-sm';
     categoryTitle.innerHTML = `
       <span class="flex items-center"><span class="w-4 h-4 mr-2 inline-block bg-gradient-to-br from-teal-400 via-pink-500 to-yellow-300 rounded"></span>${category.name}</span>
       <span class="arrow transition-transform duration-200">▼</span>
     `;
-    
+
     const subcategoryList = document.createElement('div');
     subcategoryList.className = 'hidden pl-6 mt-1';
-    
+
     category.subcategories.forEach(subcategory => {
       const link = document.createElement('a');
       link.href = `#${subcategory.id}`;
@@ -28,11 +28,11 @@ function renderSidebar(data) {
       link.className = 'block py-1 text-sm text-slate-400 hover:text-white transition-colors rounded px-2';
       subcategoryList.appendChild(link);
     });
-    
+
     categoryDiv.appendChild(categoryTitle);
     categoryDiv.appendChild(subcategoryList);
     sidebarContainer.appendChild(categoryDiv);
-    
+
     // Add event listener
     categoryTitle.addEventListener('click', () => {
       toggleCategory(categoryTitle);
@@ -44,43 +44,43 @@ function renderSidebar(data) {
 function renderContentSections(data) {
   const contentContainer = document.getElementById('content-sections');
   contentContainer.innerHTML = ''; // Clear any existing content
-  
+
   data.categories.forEach(category => {
     category.subcategories.forEach(subcategory => {
       const section = document.createElement('section');
       section.id = subcategory.id;
       section.className = 'content-section hidden';
-      
+
       const heading = document.createElement('h2');
       heading.textContent = `${category.name} > ${subcategory.name}`;
       heading.className = 'text-2xl text-white mb-2';
-      
+
       const description = document.createElement('p');
       description.textContent = subcategory.description || `Resources for ${subcategory.name}`;
       description.className = 'text-slate-400 mb-6';
-      
+
       const list = document.createElement('ul');
       list.className = 'space-y-3';
-      
+
       subcategory.resources.forEach(resource => {
         const listItem = document.createElement('li');
         listItem.className = 'bg-[#121212] p-4 rounded-lg';
-        
+
         const link = document.createElement('a');
         link.href = resource.url;
         link.className = 'text-[#00ccff] hover:underline text-lg font-medium';
         link.textContent = resource.title;
         link.target = "_blank"; // Open in new tab
-        
+
         const description = document.createElement('p');
         description.className = 'text-slate-400 mt-1';
         description.textContent = resource.description || 'No description available';
-        
+
         listItem.appendChild(link);
         listItem.appendChild(description);
         list.appendChild(listItem);
       });
-      
+
       section.appendChild(heading);
       section.appendChild(description);
       section.appendChild(list);
@@ -92,7 +92,7 @@ function renderContentSections(data) {
 function toggleCategory(el) {
   const list = el.nextElementSibling;
   const isVisible = list.classList.contains('block');
-  
+
   // Toggle visibility
   if (isVisible) {
     list.classList.remove('block');
@@ -101,11 +101,11 @@ function toggleCategory(el) {
     list.classList.remove('hidden');
     list.classList.add('block');
   }
-  
+
   // Toggle arrow
   const arrow = el.querySelector('.arrow');
   arrow.textContent = isVisible ? '▼' : '▲';
-  
+
   // Toggle transform for animation
   if (isVisible) {
     arrow.style.transform = '';
@@ -120,12 +120,12 @@ function setActiveLink(element) {
   if (currentSelected) {
     currentSelected.classList.remove('bg-[#3a3a3a]', 'text-white');
   }
-  
+
   // Add active state to current selection
   if (element && element !== document.getElementById('home-link')) {
     element.classList.add('bg-[#3a3a3a]', 'text-white');
   }
-  
+
   // Update current selection
   currentSelected = element;
 }
@@ -148,10 +148,10 @@ function showSection(id) {
 function loadResourcesData() {
   const loadingEl = document.getElementById('loading');
   const errorEl = document.getElementById('error-message');
-  
+
   loadingEl.classList.remove('hidden');
   errorEl.classList.add('hidden');
-  
+
   fetch('resources.json')
     .then(response => {
       if (!response.ok) {
@@ -161,11 +161,11 @@ function loadResourcesData() {
     })
     .then(data => {
       loadingEl.classList.add('hidden');
-      
+
       // Render the page with loaded data
       renderSidebar(data);
       renderContentSections(data);
-      
+
       // Set up click handlers for subcategory links
       document.querySelectorAll('[data-target]').forEach(link => {
         link.addEventListener('click', (e) => {
@@ -175,7 +175,7 @@ function loadResourcesData() {
           setActiveLink(link);
         });
       });
-      
+
       // Setup home link handler
       const homeLink = document.getElementById('home-link');
       homeLink.addEventListener('click', (e) => {
@@ -183,13 +183,15 @@ function loadResourcesData() {
         showSection('home');
         setActiveLink(homeLink);
       });
-      
+
       // Setup quick links in the home page
       setupQuickLinks(data);
-      
+
       // Show home section by default
       showSection('home');
       setActiveLink(homeLink);
+
+      setupSearch(data);
     })
     .catch(error => {
       console.error('Error loading resources data:', error);
@@ -258,22 +260,22 @@ function loadLatestUpdates() {
 function setupQuickLinks(data) {
   // These are example link IDs that might exist in your data
   // You should update these to match actual IDs in your data
-  
+
   const quickLinks = [
     { id: 'beginner-link', targetId: 'unity-basics' },
     { id: 'tutorials-link', targetId: 'tutorials' },
     { id: 'tools-link', targetId: 'essential-tools' }
   ];
-  
+
   quickLinks.forEach(link => {
     const element = document.getElementById(link.id);
     if (element) {
       element.addEventListener('click', (e) => {
         e.preventDefault();
-        
+
         // Find the corresponding sidebar link to highlight
         const sidebarLink = document.querySelector(`[data-target="${link.targetId}"]`);
-        
+
         if (sidebarLink) {
           // Find parent category and open it
           const parentCategory = sidebarLink.closest('.mb-2').querySelector('.flex');
@@ -283,7 +285,7 @@ function setupQuickLinks(data) {
               toggleCategory(parentCategory);
             }
           }
-          
+
           // Show the section and highlight the link
           showSection(link.targetId);
           setActiveLink(sidebarLink);
@@ -293,6 +295,86 @@ function setupQuickLinks(data) {
         }
       });
     }
+  });
+}
+
+function setupSearch(data) {
+  const searchBox = document.getElementById('search-box');
+  if (!searchBox) return;
+
+  searchBox.addEventListener('input', () => {
+    const query = searchBox.value.toLowerCase().trim();
+    const contentContainer = document.getElementById('content-sections');
+
+    // Hide all regular sections
+    document.querySelectorAll('.content-section').forEach(section => {
+      section.classList.add('hidden');
+    });
+
+    if (query === '') {
+      // If search box is empty, show home section
+      showSection('home');
+      return;
+    }
+
+    const searchResults = [];
+
+    data.categories.forEach(category => {
+      category.subcategories.forEach(subcategory => {
+        subcategory.resources.forEach(resource => {
+          const titleMatch = resource.title.toLowerCase().includes(query);
+          const descMatch = (resource.description || '').toLowerCase().includes(query);
+
+          if (titleMatch || descMatch) {
+            searchResults.push({
+              ...resource,
+              category: category.name,
+              subcategory: subcategory.name,
+            });
+          }
+        });
+      });
+    });
+
+    // Render search results
+    contentContainer.innerHTML = '';
+
+    const resultSection = document.createElement('section');
+    resultSection.className = 'content-section';
+    resultSection.id = 'search-results';
+
+    const heading = document.createElement('h2');
+    heading.className = 'text-2xl text-white mb-4';
+    heading.textContent = `Search Results for "${query}"`;
+
+    const resultList = document.createElement('ul');
+    resultList.className = 'space-y-3';
+
+    if (searchResults.length === 0) {
+      const noResults = document.createElement('li');
+      noResults.textContent = 'No matching resources found.';
+      noResults.className = 'text-slate-400';
+      resultList.appendChild(noResults);
+    } else {
+      searchResults.forEach(result => {
+        const item = document.createElement('li');
+        item.className = 'bg-[#121212] p-4 rounded-lg';
+
+        item.innerHTML = `
+          <a href="${result.url}" target="_blank" class="text-[#00ccff] hover:underline text-lg font-medium">
+            ${result.title}
+          </a>
+          <p class="text-slate-400 text-sm">${result.description || 'No description'}</p>
+          <p class="text-slate-500 text-xs mt-1">${result.category} > ${result.subcategory}</p>
+        `;
+
+        resultList.appendChild(item);
+      });
+    }
+
+    resultSection.appendChild(heading);
+    resultSection.appendChild(resultList);
+    contentContainer.appendChild(resultSection);
   });
 }
 
