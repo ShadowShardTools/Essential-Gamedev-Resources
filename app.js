@@ -286,18 +286,18 @@ function setupSearch(data) {
 
   searchBox.addEventListener('input', () => {
     const query = searchBox.value.toLowerCase().trim();
-    const contentContainer = document.getElementById('content-sections');
+    
+    if (query === '') {
+      // If search box is empty, show home section and restore normal navigation
+      showSection('home');
+      setActiveLink(document.getElementById('home-link'));
+      return;
+    }
 
     // Hide all regular sections
     document.querySelectorAll('.content-section').forEach(section => {
       section.classList.add('hidden');
     });
-
-    if (query === '') {
-      // If search box is empty, show home section
-      showSection('home');
-      return;
-    }
 
     const searchResults = [];
 
@@ -312,19 +312,24 @@ function setupSearch(data) {
               ...resource,
               category: category.name,
               subcategory: subcategory.name,
+              subcategoryId: subcategory.id
             });
           }
         });
       });
     });
 
-    // Render search results
-    contentContainer.innerHTML = '';
-
-    const resultSection = document.createElement('section');
-    resultSection.className = 'content-section';
-    resultSection.id = 'search-results';
-
+    // Create or update search results section
+    let resultSection = document.getElementById('search-results');
+    if (!resultSection) {
+      resultSection = document.createElement('section');
+      resultSection.className = 'content-section';
+      resultSection.id = 'search-results';
+      document.getElementById('content-sections').appendChild(resultSection);
+    }
+    
+    resultSection.innerHTML = ''; // Clear previous results
+    
     const heading = document.createElement('h2');
     heading.className = 'text-2xl text-white mb-4';
     heading.textContent = `Search Results for "${query}"`;
@@ -347,9 +352,13 @@ function setupSearch(data) {
             ${highlight(result.title, query)}
           </a>
           <p class="text-slate-400 text-sm">${highlight(result.description || 'No description', query)}</p>
-          <p class="text-slate-500 text-xs mt-1">${result.category} > ${result.subcategory}</p>
+          <div class="flex justify-between mt-1">
+            <p class="text-slate-500 text-xs">${result.category} > ${result.subcategory}</p>
+            <a href="#" class="text-xs text-[#00ccff] navigate-to-section" data-section="${result.subcategoryId}">
+              Go to section
+            </a>
+          </div>
         `;
-
 
         resultList.appendChild(item);
       });
@@ -357,7 +366,53 @@ function setupSearch(data) {
 
     resultSection.appendChild(heading);
     resultSection.appendChild(resultList);
-    contentContainer.appendChild(resultSection);
+    
+    // Show the search results section
+    resultSection.classList.remove('hidden');
+
+    // Add event listeners to "Go to section" links
+    resultSection.querySelectorAll('.navigate-to-section').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const sectionId = link.getAttribute('data-section');
+        
+        // Clear search box
+        searchBox.value = '';
+        
+        // Find and trigger click on the corresponding sidebar link
+        const sidebarLink = document.querySelector(`[data-target="${sectionId}"]`);
+        if (sidebarLink) {
+          // Expand the parent category if needed
+          const categoryDiv = sidebarLink.closest('.pl-6');
+          if (categoryDiv && categoryDiv.classList.contains('hidden')) {
+            const categoryTitle = categoryDiv.previousElementSibling;
+            toggleCategory(categoryTitle);
+          }
+          
+          sidebarLink.click();
+        }
+      });
+    });
+  });
+
+  // Add a clear button for the search box
+  const searchContainer = searchBox.parentElement;
+  const clearButton = document.createElement('button');
+  clearButton.className = 'absolute right-2 top-2 text-slate-500 hover:text-white';
+  clearButton.innerHTML = '✕';
+  clearButton.style.display = 'none';
+  searchContainer.style.position = 'relative';
+  searchContainer.appendChild(clearButton);
+  
+  searchBox.addEventListener('input', () => {
+    clearButton.style.display = searchBox.value ? 'block' : 'none';
+  });
+  
+  clearButton.addEventListener('click', () => {
+    searchBox.value = '';
+    clearButton.style.display = 'none';
+    showSection('home');
+    setActiveLink(document.getElementById('home-link'));
   });
 }
 
