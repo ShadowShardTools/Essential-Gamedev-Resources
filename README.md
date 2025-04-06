@@ -30,7 +30,20 @@ Contributions are welcome! To contribute:
 /
 ├── index.html          # Main HTML file
 ├── app.js              # JavaScript functionality
-├── resources.json      # Resource categories and links
+├── resources
+    ├── categories
+        ├── CSharpProgramming.json
+        ├── GeneralShaders.json
+        ├── ScreenSpaceShaders.json
+        ├── Sounds.json
+        ├── Textures.json
+        ├── UI-UX.json
+        ├── UnityEditor.json
+        ├── UnityRuntime.json
+        └── VFX.json
+    ├── images
+        └── ShadowShardTools_Logo_128x128.png
+    └── categories-list.json 
 └── updates.json        # Latest updates data
 ```
 
@@ -38,7 +51,7 @@ Contributions are welcome! To contribute:
 
 ### Adding New Resources
 
-Edit the `resources.json` file to add new categories, subcategories, or resources:
+Add the `category.json`(in resources/categories) file to add new resources:
 
 ```json
 {
@@ -63,6 +76,7 @@ Edit the `resources.json` file to add new categories, subcategories, or resource
   ]
 }
 ```
+After that, add your category to the list in the `categories-list.json`
 
 ### Adding Updates
 
