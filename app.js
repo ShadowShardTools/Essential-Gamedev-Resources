@@ -74,7 +74,7 @@ function renderContentSections(data) {
 
         const description = document.createElement('p');
         description.className = 'text-slate-400 mt-1';
-        description.textContent = resource.description || 'No description available';
+        description.textContent = resource.description || '';
 
         listItem.appendChild(link);
         listItem.appendChild(description);
@@ -90,29 +90,32 @@ function renderContentSections(data) {
 }
 
 function toggleCategory(el) {
+  // Collapse all others
+  document.querySelectorAll('#sidebar-categories > div').forEach(div => {
+    if (div !== el.parentElement) {
+      const subList = div.querySelector('div.pl-6');
+      const arrow = div.querySelector('.arrow');
+      if (subList && arrow) {
+        subList.classList.add('hidden');
+        subList.classList.remove('block');
+        arrow.textContent = '▼';
+        arrow.style.transform = '';
+      }
+    }
+  });
+
+  // Toggle current
   const list = el.nextElementSibling;
   const isVisible = list.classList.contains('block');
 
-  // Toggle visibility
-  if (isVisible) {
-    list.classList.remove('block');
-    list.classList.add('hidden');
-  } else {
-    list.classList.remove('hidden');
-    list.classList.add('block');
-  }
+  list.classList.toggle('hidden', isVisible);
+  list.classList.toggle('block', !isVisible);
 
-  // Toggle arrow
   const arrow = el.querySelector('.arrow');
   arrow.textContent = isVisible ? '▼' : '▲';
-
-  // Toggle transform for animation
-  if (isVisible) {
-    arrow.style.transform = '';
-  } else {
-    arrow.style.transform = 'rotate(180deg)';
-  }
+  arrow.style.transform = isVisible ? '' : 'rotate(180deg)';
 }
+
 
 // Function to set active selection state
 function setActiveLink(element) {
@@ -132,19 +135,20 @@ function setActiveLink(element) {
 
 // Function to show a specific section
 function showSection(id) {
-  // Hide all sections
+  // Hide all
   document.querySelectorAll('.content-section').forEach(section => {
     section.classList.add('hidden');
   });
 
-  // Show requested section
+  // Show current
   const section = document.getElementById(id);
   if (section) {
     section.classList.remove('hidden');
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 }
 
-// Load data from external file
+// Function to load all resources JSON files dynamically
 function loadResourcesData() {
   const loadingEl = document.getElementById('loading');
   const errorEl = document.getElementById('error-message');
@@ -152,49 +156,42 @@ function loadResourcesData() {
   loadingEl.classList.remove('hidden');
   errorEl.classList.add('hidden');
 
-  fetch('resources.json')
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      return response.json();
-    })
+  // Fetch the list of JSON files from the 'categories-list.json'
+  fetchWithRetry('resources/categories-list.json')
+    .then(response => response.json())
     .then(data => {
-      loadingEl.classList.add('hidden');
+      if (data.files && data.files.length > 0) {
+        // Dynamically fetch all JSON files listed by the 'categories-list.json'
+        const promises = data.files.map(file => fetchWithRetry(`resources/categories/${file}`).then(res => res.json()));
 
-      // Render the page with loaded data
-      renderSidebar(data);
-      renderContentSections(data);
+        Promise.all(promises)
+          .then(responses => {
+            loadingEl.classList.add('hidden');
+            const mergedData = { categories: [] };
 
-      // Set up click handlers for subcategory links
-      document.querySelectorAll('[data-target]').forEach(link => {
-        link.addEventListener('click', (e) => {
-          e.preventDefault();
-          const target = link.getAttribute('data-target');
-          showSection(target);
-          setActiveLink(link);
-        });
-      });
+            // Merge data from all JSON files
+            responses.forEach(response => {
+              mergedData.categories.push(...response.categories);
+            });
 
-      // Setup home link handler
-      const homeLink = document.getElementById('home-link');
-      homeLink.addEventListener('click', (e) => {
-        e.preventDefault();
-        showSection('home');
-        setActiveLink(homeLink);
-      });
-
-      // Setup quick links in the home page
-      setupQuickLinks(data);
-
-      // Show home section by default
-      showSection('home');
-      setActiveLink(homeLink);
-
-      setupSearch(data);
+            // Render the page with loaded data
+            renderSidebar(mergedData);
+            renderContentSections(mergedData);
+            setupEventListeners(mergedData);
+          })
+          .catch(error => {
+            console.error('Error loading JSON files:', error);
+            loadingEl.classList.add('hidden');
+            errorEl.classList.remove('hidden');
+          });
+      } else {
+        console.error('No JSON files found');
+        loadingEl.classList.add('hidden');
+        errorEl.classList.remove('hidden');
+      }
     })
     .catch(error => {
-      console.error('Error loading resources data:', error);
+      console.error('Error fetching file list:', error);
       loadingEl.classList.add('hidden');
       errorEl.classList.remove('hidden');
     });
@@ -216,7 +213,7 @@ function loadLatestUpdates() {
   loadingItem.textContent = 'Loading updates...';
   updatesList.appendChild(loadingItem);
 
-  fetch('updates.json')
+  fetchWithRetry('updates.json')
     .then(response => {
       if (!response.ok) throw new Error('Failed to load updates');
       return response.json();
@@ -255,47 +252,32 @@ function loadLatestUpdates() {
     });
 }
 
-
 // Function to set up the quick links on the home page
-function setupQuickLinks(data) {
-  // These are example link IDs that might exist in your data
-  // You should update these to match actual IDs in your data
-
-  const quickLinks = [
-    { id: 'beginner-link', targetId: 'unity-basics' },
-    { id: 'tutorials-link', targetId: 'tutorials' },
-    { id: 'tools-link', targetId: 'essential-tools' }
-  ];
-
-  quickLinks.forEach(link => {
-    const element = document.getElementById(link.id);
-    if (element) {
-      element.addEventListener('click', (e) => {
-        e.preventDefault();
-
-        // Find the corresponding sidebar link to highlight
-        const sidebarLink = document.querySelector(`[data-target="${link.targetId}"]`);
-
-        if (sidebarLink) {
-          // Find parent category and open it
-          const parentCategory = sidebarLink.closest('.mb-2').querySelector('.flex');
-          if (parentCategory) {
-            const list = parentCategory.nextElementSibling;
-            if (list.classList.contains('hidden')) {
-              toggleCategory(parentCategory);
-            }
-          }
-
-          // Show the section and highlight the link
-          showSection(link.targetId);
-          setActiveLink(sidebarLink);
-        } else {
-          // Fallback to home if target doesn't exist
-          showSection('home');
-        }
-      });
-    }
+function setupEventListeners(data) {
+  // Add event listeners for subcategory links
+  document.querySelectorAll('[data-target]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = link.getAttribute('data-target');
+      showSection(target);
+      setActiveLink(link);
+    });
   });
+
+  // Set up home link handler
+  const homeLink = document.getElementById('home-link');
+  homeLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    showSection('home');
+    setActiveLink(homeLink);
+  });
+
+  // Show home section by default
+  showSection('home');
+  setActiveLink(homeLink);
+
+  // Setup search functionality
+  setupSearch(data);
 }
 
 function setupSearch(data) {
@@ -362,11 +344,12 @@ function setupSearch(data) {
 
         item.innerHTML = `
           <a href="${result.url}" target="_blank" class="text-[#00ccff] hover:underline text-lg font-medium">
-            ${result.title}
+            ${highlight(result.title, query)}
           </a>
-          <p class="text-slate-400 text-sm">${result.description || 'No description'}</p>
+          <p class="text-slate-400 text-sm">${highlight(result.description || 'No description', query)}</p>
           <p class="text-slate-500 text-xs mt-1">${result.category} > ${result.subcategory}</p>
         `;
+
 
         resultList.appendChild(item);
       });
@@ -378,8 +361,28 @@ function setupSearch(data) {
   });
 }
 
+function highlight(text, keyword) {
+  const regex = new RegExp(`(${keyword})`, 'gi');
+  return text.replace(regex, '<mark class="bg-yellow-300 text-black">$1</mark>');
+}
+
 // Initialize the page
 document.addEventListener("DOMContentLoaded", () => {
   loadResourcesData();
   loadLatestUpdates();
+
+  const hash = window.location.hash.substring(1);
+  if (hash) {
+    const target = document.querySelector(`[data-target="${hash}"]`);
+    if (target) {
+      target.click(); // Simulate click to load section
+    }
+  }
 });
+
+function fetchWithRetry(url, retries = 3) {
+  return fetch(url).catch(err => {
+    if (retries > 0) return fetchWithRetry(url, retries - 1);
+    throw err;
+  });
+}

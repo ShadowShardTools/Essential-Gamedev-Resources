@@ -1,0 +1,68 @@
+{
+    "categories": [
+        {
+            "name": "Screen Space Shaders",
+            "subcategories": [
+                {
+                    "id": "ss-shader-libraries",
+                    "name": "Shader Libraries",
+                    "resources": [
+                        {
+                            "title": "X-PostProcessing Library",
+                            "url": "https://github.com/QianMo/X-PostProcessing-Library",
+                            "description": "High-quality open source post-processing library for Unity engine, aims to provide the industry's mainstream high-quality post-processing effects."
+                        }
+                    ]
+                },
+                {
+                    "id": "ss-shader-lighting",
+                    "name": "Lighting",
+                    "resources": [
+                        {
+                            "title": "Robcupisz LightShafts",
+                            "url": "https://github.com/robcupisz/LightShafts",
+                            "description": "A light shafts (aka light scattering, aka volumetric shadows) effect for Unity."
+                        },
+                        {
+                            "title": "Math-araujo Screen Space God Rays",
+                            "url": "https://github.com/math-araujo/screen-space-godrays",
+                            "description": "Implementation of the paper 'Volumetric Light Scattering as a Post-Process' using OpenGL 4.5"
+                        }
+                    ]
+                },
+                {
+                    "id": "ss-shader-outline",
+                    "name": "Outline",
+                    "resources": [
+                        {
+                            "title": "Pixel Perfect Outline Article by Doug Valenta",
+                            "url": "https://www.videopoetics.com/tutorials/pixel-perfect-outline-shaders-unity",
+                            "description": "An utility to tweak matcaps, with realtime visual feedback."
+                        },
+                        {
+                            "title": "Rendering Outline Article by Alexander Ameye",
+                            "url": "https://ameye.dev/notes/rendering-outlines",
+                            "description": "Different techniques for rendering outlines in Unity."
+                        },
+                        {
+                            "title": "Robinseibold URP Outlines",
+                            "url": "https://github.com/Robinseibold/Unity-URP-Outlines",
+                            "description": "A custom renderer feature for screen space outlines based on Erik Roystan Ross Outline Shader."
+                        }
+                    ]
+                },
+                {
+                    "id": "ss-shader-reconstruction",
+                    "name": "Screen Space Reconstruction",
+                    "resources": [
+                        {
+                            "title": "Federicocasares Cavity/Curvature",
+                            "url": "https://github.com/federicocasares/cavifree",
+                            "description": "Cavifree is a screen space post-processing effect for Unity that mimics the cavity viewport effect found in Blender."
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
