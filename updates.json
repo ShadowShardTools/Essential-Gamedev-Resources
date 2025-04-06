@@ -1,8 +1,12 @@
 {
-    "updates": [
-      {
-        "title": "Real init!",
-        "description": "Updated site :)"
-      }
-    ]
-  }
+  "updates": [
+    {
+      "title": "Global resources update",
+      "description": "Updated and sorted all resources! </br> NEW: You can now search resources by title or description directly from the sidebar. Just start typing to instantly see relevant results without leaving the page."
+    },
+    {
+      "title": "Real init!",
+      "description": "Updated site :)"
+    }
+  ]
+}

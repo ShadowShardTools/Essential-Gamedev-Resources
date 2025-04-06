@@ -1,6 +1,76 @@
 {
   "categories": [
     {
+      "name": "C# Programming",
+      "subcategories": [
+        {
+          "id": "cs-programming-libraries",
+          "name": "Libraries",
+          "resources": [
+            {
+              "title": "ZLinq",
+              "url": "https://github.com/Cysharp/ZLinq"
+            },
+            {
+              "title": "ZString",
+              "url": "https://github.com/Cysharp/ZString"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Unity Runtime",
+      "subcategories": [
+        {
+          "id": "unity-runtime-general-libraries",
+          "name": "General Libraries",
+          "resources": [
+            {
+              "title": "Unity Cs Reference",
+              "url": "https://github.com/Unity-Technologies/UnityCsReference"
+            },
+            {
+              "title": "GlitchEnzo NuGet For Unity",
+              "url": "https://github.com/GlitchEnzo/NuGetForUnity"
+            },
+            {
+              "title": "Crashkonijn Unity GOAP",
+              "url": "https://github.com/crashkonijn/GOAP"
+            },
+            {
+              "title": "Starikcetin Eflatun.SceneReference",
+              "url": "https://github.com/starikcetin/Eflatun.SceneReference"
+            }
+          ]
+        },
+        {
+          "id": "unity-runtime-math-libraries",
+          "name": "Math Libraries",
+          "resources": [
+            {
+              "title": "FreyaHolmer Mathf's",
+              "url": "https://github.com/FreyaHolmer/Mathfs"
+            },
+            {
+              "title": "Zalo Math Utilities",
+              "url": "https://github.com/zalo/MathUtilities"
+            }
+          ]
+        },
+        {
+          "id": "unity-runtime-debug",
+          "name": "Debug",
+          "resources": [
+            {
+              "title": "Yasirkula In-Game Debug Console",
+              "url": "https://github.com/yasirkula/UnityIngameDebugConsole"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Unity Editor",
       "subcategories": [
         {
@@ -30,6 +100,14 @@
             {
               "title": "Node-Based Dialog System",
               "url": "https://github.com/merpheus-dev/NodeBasedDialogueSystem"
+            },
+            {
+              "title": "AlicanHasirci TextTween",
+              "url": "https://github.com/AlicanHasirci/TextTween"
+            },
+            {
+              "title": "Luca3317 TMP Effects",
+              "url": "https://github.com/Luca3317/TMPEffects"
             }
           ]
         },
@@ -42,11 +120,21 @@
               "url": "https://github.com/halak/unity-editor-icons"
             }
           ]
+        },
+        {
+          "id": "editor-textures",
+          "name": "Texture Tools",
+          "resources": [
+            {
+              "title": "Baking shaders",
+              "url": "https://www.ronja-tutorials.com/post/030-baking-shaders"
+            }
+          ]
         }
       ]
     },
     {
-      "name": "Shaders",
+      "name": "General Shaders",
       "subcategories": [
         {
           "id": "shader-libraries",
@@ -61,34 +149,16 @@
               "url": "https://cglearn.eu/pub/advanced-computer-graphics"
             },
             {
-              "title": "X-PostProcessing Library",
-              "url": "https://github.com/QianMo/X-PostProcessing-Library"
-            },
-            {
               "title": "Zoroiscrying Library",
               "url": "https://github.com/Zoroiscrying/Unity_Shader_Library_Zoroiscrying"
             },
             {
               "title": "NVIDIA CG Documentation",
               "url": "https://developer.download.nvidia.com/cg/"
-            }
-          ]
-        },
-        {
-          "id": "shader-outline",
-          "name": "Outline",
-          "resources": [
-            {
-              "title": "Pixel Perfect Outline",
-              "url": "https://www.videopoetics.com/tutorials/pixel-perfect-outline-shaders-unity"
             },
             {
-              "title": "Rendering Outline",
-              "url": "https://ameye.dev/notes/rendering-outlines"
-            },
-            {
-              "title": "Robinseibold URP Outlines",
-              "url": "https://github.com/Robinseibold/Unity-URP-Outlines"
+              "title": "Mob-sakai UI Effects",
+              "url": "https://github.com/mob-sakai/UIEffect"
             }
           ]
         },
@@ -149,54 +219,207 @@
               "url": "https://github.com/colour-science/colour-nuke/tree/master/colour_nuke/resources/images/ColorChecker2014"
             }
           ]
-        }
-      ]
-    },
-    {
-      "name": "Optimization",
-      "subcategories": [
-        {
-          "id": "opt-cpu",
-          "name": "CPU",
-          "resources": [
-            {
-              "title": "CPU Optimization Resources",
-              "url": "#"
-            }
-          ]
         },
         {
-          "id": "opt-gpu",
-          "name": "GPU",
+          "id": "shader-uv-mapping",
+          "name": "UV Mapping",
           "resources": [
             {
-              "title": "GPU Optimization Resources",
-              "url": "#"
+              "title": "Texture Repetition",
+              "url": "https://iquilezles.org/articles/texturerepetition/"
             }
           ]
         }
       ]
     },
     {
-      "name": "Programming",
+      "name": "Screen Space Shaders",
       "subcategories": [
         {
-          "id": "prog-systems",
-          "name": "Systems",
+          "id": "ss-shader-libraries",
+          "name": "Shader Libraries",
           "resources": [
             {
-              "title": "Programming Systems Resources",
-              "url": "#"
+              "title": "X-PostProcessing Library",
+              "url": "https://github.com/QianMo/X-PostProcessing-Library"
             }
           ]
         },
         {
-          "id": "prog-patterns",
-          "name": "Patterns",
+          "id": "ss-shader-lighting",
+          "name": "Lighting",
           "resources": [
             {
-              "title": "Programming Patterns Resources",
-              "url": "#"
+              "title": "Robcupisz LightShafts",
+              "url": "https://github.com/robcupisz/LightShafts"
+            },
+            {
+              "title": "Math-araujo Screen Space God Rays",
+              "url": "https://github.com/math-araujo/screen-space-godrays"
+            }
+          ]
+        },
+        {
+          "id": "ss-shader-outline",
+          "name": "Outline",
+          "resources": [
+            {
+              "title": "Pixel Perfect Outline",
+              "url": "https://www.videopoetics.com/tutorials/pixel-perfect-outline-shaders-unity"
+            },
+            {
+              "title": "Rendering Outline",
+              "url": "https://ameye.dev/notes/rendering-outlines"
+            },
+            {
+              "title": "Robinseibold URP Outlines",
+              "url": "https://github.com/Robinseibold/Unity-URP-Outlines"
+            }
+          ]
+        },
+        {
+          "id": "ss-shader-reconstruction",
+          "name": "Screen Space Reconstruction",
+          "resources": [
+            {
+              "title": "Federicocasares Cavity/Curvature",
+              "url": "https://github.com/federicocasares/cavifree"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "VFX",
+      "subcategories": [
+        {
+          "id": "vfx-examples-tutorials",
+          "name": "Examples/Tutorials",
+          "resources": [
+            {
+              "title": "Unity VFX Graph Learning Template",
+              "url": "https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/sample-learningTemplates.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Textures",
+      "subcategories": [
+        {
+          "id": "textures-libraries",
+          "name": "Texture Libraries",
+          "resources": [
+            {
+              "title": "Nidorx Matcaps",
+              "url": "https://github.com/nidorx/matcaps"
+            },
+            {
+              "title": "Texture Ninja",
+              "url": "https://texture.ninja/textures"
+            },
+            {
+              "title": "PolyHaven",
+              "url": "https://polyhaven.com/"
+            },
+            {
+              "title": "AmbientCG",
+              "url": "https://ambientcg.com/"
+            },
+            {
+              "title": "Poliigon",
+              "url": "https://www.poliigon.com/textures/free"
+            },
+            {
+              "title": "LotPixel",
+              "url": "https://www.lotpixel.com/texture-library?credit=free"
+            },
+            {
+              "title": "Substance Community Assets",
+              "url": "https://substance3d.adobe.com/community-assets"
+            },
+            {
+              "title": "MaterialX Library",
+              "url": "https://matlib.gpuopen.com/main/materials/all"
+            }
+          ]
+        },
+        {
+          "id": "textures-pallets",
+          "name": "Pallets",
+          "resources": [
+            {
+              "title": "Milkandbanana Gradient Pallete",
+              "url": "https://milkandbanana.itch.io/gradient-color-pallete"
+            }
+          ]
+        },
+        {
+          "id": "textures-matcaps",
+          "name": "Matcaps",
+          "resources": [
+            {
+              "title": "Nidorx Matcaps",
+              "url": "https://github.com/nidorx/matcaps"
+            },
+            {
+              "title": "Matcap studio",
+              "url": "https://www.kchapelier.com/matcap-studio/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "UI-UX",
+      "subcategories": [
+        {
+          "id": "ui-ux-references",
+          "name": "References",
+          "resources": [
+            {
+              "title": "Game UI Database",
+              "url": "https://www.gameuidatabase.com/"
+            }
+          ]
+        },
+        {
+          "id": "ui-ux-svg-libraries",
+          "name": "SVG Libraries",
+          "resources": [
+            {
+              "title": "SVG Repo",
+              "url": "https://www.svgrepo.com/"
+            },
+            {
+              "title": "Flaticon",
+              "url": "https://www.flaticon.com/"
+            }
+          ]
+        },
+        {
+          "id": "ui-ux-color-generators",
+          "name": "Color Generators",
+          "resources": [
+            {
+              "title": "MyColor Space",
+              "url": "https://mycolor.space/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sounds",
+      "subcategories": [
+        {
+          "id": "sounds-libraries",
+          "name": "Libraries",
+          "resources": [
+            {
+              "title": "Free sound effects",
+              "url": "https://www.bluezone-corporation.com/free-sound-effects"
             }
           ]
         }
