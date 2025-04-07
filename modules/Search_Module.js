@@ -1,6 +1,5 @@
 import { showSection, setActiveLink, toggleCategory } from './UI_Interactions.js';
-
-// Functions for search functionality
+import { highlight, getTagClass } from './Utils.js';
 
 export function setupSearch(data) {
     const searchBox = document.getElementById('search-box');
@@ -68,22 +67,60 @@ export function setupSearch(data) {
             searchResults.forEach(result => {
                 const item = document.createElement('li');
                 item.className = 'bg-[#121212] p-4 rounded-lg';
-
-                item.innerHTML = `
-            <a href="${result.url}" target="_blank" class="text-[#00ccff] hover:underline text-lg font-medium">
-              ${highlight(result.title, query)}
-            </a>
-            <p class="text-slate-400 text-sm">${highlight(result.description || 'No description', query)}</p>
-            <div class="flex justify-between mt-1">
-              <p class="text-slate-500 text-xs">${result.category} > ${result.subcategory}</p>
-              <a href="#" class="text-xs text-[#00ccff] navigate-to-section" data-section="${result.subcategoryId}">
-                Go to section
-              </a>
-            </div>
-          `;
-
+            
+                const link = document.createElement('a');
+                link.href = result.url;
+                link.target = "_blank";
+                link.className = 'text-[#00ccff] hover:underline text-lg font-medium';
+                link.innerHTML = highlight(result.title, query);
+            
+                const desc = document.createElement('p');
+                desc.className = 'text-slate-400 text-sm';
+                desc.innerHTML = highlight(result.description || 'No description', query);
+            
+                const tagContainer = document.createElement('div');
+                tagContainer.className = 'mt-2 flex flex-wrap gap-2';
+            
+                if (Array.isArray(result.tags)) {
+                    result.tags.forEach(tag => {
+                        const tagEl = document.createElement('span');
+                        tagEl.className = `inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase border-2 ${getTagClass(tag)}`;
+                        tagEl.textContent = tag;
+                        tagContainer.appendChild(tagEl);
+                    });
+                }
+            
+                if (result.license) {
+                    const licenseEl = document.createElement('span');
+                    licenseEl.className = 'inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase border-2 border-yellow-400 text-yellow-400';
+                    licenseEl.textContent = `License: ${result.license}`;
+                    tagContainer.appendChild(licenseEl);
+                }
+            
+                const meta = document.createElement('div');
+                meta.className = 'flex justify-between mt-1';
+            
+                const path = document.createElement('p');
+                path.className = 'text-slate-500 text-xs';
+                path.textContent = `${result.category} > ${result.subcategory}`;
+            
+                const navLink = document.createElement('a');
+                navLink.href = '#';
+                navLink.className = 'text-xs text-[#00ccff] navigate-to-section';
+                navLink.setAttribute('data-section', result.subcategoryId);
+                navLink.textContent = 'Go to section';
+            
+                meta.appendChild(path);
+                meta.appendChild(navLink);
+            
+                item.appendChild(link);
+                item.appendChild(desc);
+                item.appendChild(tagContainer);
+                item.appendChild(meta);
+            
                 resultList.appendChild(item);
             });
+            
         }
 
         resultSection.appendChild(heading);
@@ -136,10 +173,4 @@ export function setupSearch(data) {
         showSection('home');
         setActiveLink(document.getElementById('home-link'));
     });
-}
-
-// Highlight search matches
-function highlight(text, keyword) {
-    const regex = new RegExp(`(${keyword})`, 'gi');
-    return text.replace(regex, '<mark class="bg-yellow-300 text-black">$1</mark>');
 }

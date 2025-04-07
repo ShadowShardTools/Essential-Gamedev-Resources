@@ -1,4 +1,5 @@
 import { toggleCategory } from './UI_Interactions.js';
+import { getTagClass } from './Utils.js';
 
 // Function to render sidebar categories
 export function renderSidebar(data) {
@@ -71,12 +72,34 @@ export function renderContentSections(data) {
                 link.textContent = resource.title;
                 link.target = "_blank"; // Open in new tab
 
+                // Render tags
+                const tagsContainer = document.createElement('div');
+                tagsContainer.className = 'mt-2 flex flex-wrap gap-2';
+    
+                if (Array.isArray(resource.tags)) {
+                    resource.tags.forEach(tag => {
+                        const tagEl = document.createElement('span');
+                        tagEl.className = `tag inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase border-2 ${getTagClass(tag)}`;
+                        tagEl.textContent = tag;
+                        tagsContainer.appendChild(tagEl);
+                    });
+                }
+
+                // Add License tag
+                if (resource.license) {
+                    const licenseTag = document.createElement('span');
+                    licenseTag.className = 'inline-block px-3 py-1 rounded-full text-xs font-semibold uppercase border-2 border-yellow-400 text-yellow-400';
+                    licenseTag.textContent = `License: ${resource.license}`;
+                    tagsContainer.appendChild(licenseTag);
+                }
+
                 const description = document.createElement('p');
                 description.className = 'text-slate-400 mt-1';
                 description.textContent = resource.description || '';
 
                 listItem.appendChild(link);
                 listItem.appendChild(description);
+                listItem.appendChild(tagsContainer);
                 list.appendChild(listItem);
             });
 

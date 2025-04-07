@@ -10,22 +10,30 @@
             {
               "title": "Unity Cs Reference",
               "url": "https://github.com/Unity-Technologies/UnityCsReference",
-              "description": "The C# part of the Unity engine and editor source code. May be used for reference purposes only."
+              "description": "The C# part of the Unity engine and editor source code. May be used for reference purposes only.",
+              "tags": ["Repository", "Free"],
+              "license": "Unity Reference Only"
             },
             {
               "title": "GlitchEnzo NuGet For Unity",
               "url": "https://github.com/GlitchEnzo/NuGetForUnity",
-              "description": "A NuGet Package Manager for Unity."
+              "description": "A NuGet Package Manager for Unity.",
+              "tags": ["Repository", "Free"],
+              "license": "MIT"
             },
             {
               "title": "Starikcetin Eflatun.SceneReference",
               "url": "https://github.com/starikcetin/Eflatun.SceneReference",
-              "description": "Unity Scene References for Runtime and Editor. Strongly typed, robust, and reliable. Provides GUID, Path, Build Index, Name, and Address."
+              "description": "Unity Scene References for Runtime and Editor. Strongly typed, robust, and reliable. Provides GUID, Path, Build Index, Name, and Address.",
+              "tags": ["Repository", "Free"],
+              "license": "MIT"
             },
             {
               "title": "Open UPM CLI",
-              "url": "https://github.com/openupm/openupm-cli#openupm-cli",
-              "description": "The command-line tool to maintain the Unity manifest file for 3rd-party upm registries, offering a similar but lighter experience like npm or yarn for Node.js."
+              "url": "https://github.com/openupm/openupm-cli",
+              "description": "The command-line tool to maintain the Unity manifest file for 3rd-party upm registries, offering a similar but lighter experience like npm or yarn for Node.js.",
+              "tags": ["Repository", "Free"],
+              "license": "BSD-3-Clause"
             }
           ]
         },
@@ -36,7 +44,9 @@
             {
               "title": "Crashkonijn Unity GOAP",
               "url": "https://github.com/crashkonijn/GOAP",
-              "description": "A robust, multi-threaded Goal Oriented Action Planning (GOAP) system designed for Unity, empowering developers to create complex AI behaviors with ease."
+              "description": "A robust, multi-threaded Goal Oriented Action Planning (GOAP) system designed for Unity, empowering developers to create complex AI behaviors with ease.",
+              "tags": ["Repository", "Free"],
+              "license": "Apache 2.0"
             }
           ]
         },
@@ -47,7 +57,9 @@
             {
               "title": "UniTask",
               "url": "https://github.com/Cysharp/UniTask",
-              "description": "Provides an efficient allocation free async/await integration for Unity."
+              "description": "Provides an efficient allocation free async/await integration for Unity.",
+              "tags": ["Repository", "Free"],
+              "license": "MIT"
             }
           ]
         },
@@ -58,17 +70,23 @@
             {
               "title": "VContainer",
               "url": "https://github.com/hadashiA/VContainer",
-              "description": "The extra fast, feature full, Dependency Injection library running on Unity Game Engine."
+              "description": "The extra fast, feature full, Dependency Injection library running on Unity Game Engine.",
+              "tags": ["Repository", "Free"],
+              "license": "MIT"
             },
             {
               "title": "Extenject [Deprecated]",
               "url": "https://github.com/Mathijs-Bakker/Extenject",
-              "description": "Old, but still useful, dependency injection framework for Unity; industrial standard."
+              "description": "Old, but still useful, dependency injection framework for Unity; industrial standard.",
+              "tags": ["Repository", "Free"],
+              "license": "MIT"
             },
             {
               "title": "Reflex",
               "url": "https://github.com/gustavopsantos/Reflex",
-              "description": "Blazing fast, minimal but complete(except of il2cpp problems) dependency injection library for Unity."
+              "description": "Blazing fast, minimal but complete(except of il2cpp problems) dependency injection library for Unity.",
+              "tags": ["Repository", "Free"],
+              "license": "MIT"
             }
           ]
         },
@@ -79,12 +97,16 @@
             {
               "title": "FreyaHolmer Mathf's",
               "url": "https://github.com/FreyaHolmer/Mathfs",
-              "description": "Expanded math functionality for Unity by FreyaHolmer."
+              "description": "Expanded math functionality for Unity by FreyaHolmer.",
+              "tags": ["Repository", "Free"],
+              "license": "MIT"
             },
             {
               "title": "Zalo Math Utilities",
               "url": "https://github.com/zalo/MathUtilities",
-              "description": "A grab bag of some of the neat math and physics tricks that Zalo amassed over the last few years, implemented in Unity's C#. You're free to use the code here however you like."
+              "description": "A grab bag of some of the neat math and physics tricks that Zalo amassed over the last few years, implemented in Unity's C#. You're free to use the code here however you like.",
+              "tags": ["Repository", "Free"],
+              "license": "Unlicense"
             }
           ]
         },
@@ -95,7 +117,9 @@
             {
               "title": "Yasirkula In-Game Debug Console",
               "url": "https://github.com/yasirkula/UnityIngameDebugConsole",
-              "description": "A uGUI based console to see debug messages and execute commands during gameplay in Unity"
+              "description": "A uGUI based console to see debug messages and execute commands during gameplay in Unity",
+              "tags": ["Repository", "Free"],
+              "license": "MIT"
             }
           ]
         }

@@ -10,37 +10,44 @@
                         {
                             "title": "Texture Ninja",
                             "url": "https://texture.ninja",
-                            "description": "Texture.ninja is a website that offers high-resolution texture maps for free."
+                            "description": "Texture.ninja is a website that offers high-resolution texture maps for free.",
+                            "tags": ["Site", "Free"]
                         },
                         {
                             "title": "PolyHaven",
                             "url": "https://polyhaven.com/",
-                            "description": "Poly Haven is a curated public asset library for visual effects artists and game designers, providing useful high quality 3D assets in an easily obtainable manner."
+                            "description": "Poly Haven is a curated public asset library for visual effects artists and game designers, providing useful high quality 3D assets in an easily obtainable manner.",
+                            "tags": ["Site", "Free"]
                         },
                         {
                             "title": "AmbientCG",
                             "url": "https://ambientcg.com/",
-                            "description": "AmbientCG is one of the largest sources for free PBR materials, HDRIs, and models for 3D art, architectural visualization, game development, VFX and more."
+                            "description": "AmbientCG is one of the largest sources for free PBR materials, HDRIs, and models for 3D art, architectural visualization, game development, VFX and more.",
+                            "tags": ["Site", "Free"]
                         },
                         {
                             "title": "Poliigon",
-                            "url": "https://www.poliigon.com/textures/free",
-                            "description": "Explore a selection of free textures across various categories, including brick, wood, metal, and more, with diverse finishes and styles."
+                            "url": "https://www.poliigon.com/textures",
+                            "description": "Explore a selection of free textures across various categories, including brick, wood, metal, and more, with diverse finishes and styles.",
+                            "tags": ["Site", "Free/Paid"]
                         },
                         {
                             "title": "LotPixel",
-                            "url": "https://www.lotpixel.com/texture-library?credit=free",
-                            "description": "High-quality textures for games, architectural visualization, VFX, animation and ArchViz projects."
+                            "url": "https://www.lotpixel.com/texture-library",
+                            "description": "High-quality textures for games, architectural visualization, VFX, animation and ArchViz projects.",
+                            "tags": ["Site", "Free/Paid"]
                         },
                         {
                             "title": "Substance Community Assets",
                             "url": "https://substance3d.adobe.com/community-assets",
-                            "description": "Download and share for free 3D assets created by the Substance 3D community."
+                            "description": "Download and share for free 3D assets created by the Substance 3D community.",
+                            "tags": ["Site", "Free"]
                         },
                         {
                             "title": "MaterialX Library",
                             "url": "https://matlib.gpuopen.com/main/materials/all",
-                            "description": "MaterialX Library is a collection of high-quality materials and related textures that is available completely for free."
+                            "description": "MaterialX Library is a collection of high-quality materials and related textures that is available completely for free.",
+                            "tags": ["Site", "Free"]
                         }
                     ]
                 },
@@ -50,7 +57,8 @@
                     "resources": [
                         {
                             "title": "Milkandbanana Gradient Pallete",
-                            "url": "https://milkandbanana.itch.io/gradient-color-pallete"
+                            "url": "https://milkandbanana.itch.io/gradient-color-pallete",
+                            "tags": ["Site", "Free"]
                         }
                     ]
                 },
@@ -61,12 +69,16 @@
                         {
                             "title": "Nidorx Matcaps",
                             "url": "https://github.com/nidorx/matcaps",
-                            "description": "A huge library of MatCap textures in PNG and ZMT."
+                            "description": "A huge library of MatCap textures in PNG and ZMT.",
+                            "tags": ["Repository", "Free"],
+                            "license": "Mixed"
                         },
                         {
                             "title": "Kchapelier Matcap studio",
                             "url": "https://github.com/kchapelier/matcap-studio",
-                            "description": "An utility to tweak matcaps, with realtime visual feedback."
+                            "description": "An utility to tweak matcaps, with realtime visual feedback.",
+                            "tags": ["Repository", "Free"],
+                            "license": "MIT"
                         }
                     ]
                 }

@@ -10,27 +10,34 @@
             {
               "title": "Godot Shader Library",
               "url": "https://godotshaders.com",
-              "description": "Godot Shaders is a community-driven shader library for the Godot game engine."
+              "description": "Godot Shaders is a community-driven shader library for the Godot game engine.",
+              "tags": ["Repository", "Free"]
             },
             {
               "title": "Advanced Computer Graphics",
               "url": "https://cglearn.eu/pub/advanced-computer-graphics",
-              "description": "Computer Graphics Learning Materials by University of Tartu."
+              "description": "Computer Graphics Learning Materials by University of Tartu.",
+              "tags": ["Site", "Free"]
             },
             {
               "title": "Zoroiscrying Library",
               "url": "https://github.com/Zoroiscrying/Unity_Shader_Library_Zoroiscrying",
-              "description": "Shader library used for unity shader coding, pointing to different shader effects found from various sources."
+              "description": "Shader library used for unity shader coding, pointing to different shader effects found from various sources.",
+              "tags": ["Repository", "Free"],
+              "license": "MIT"
             },
             {
               "title": "NVIDIA CG Documentation",
               "url": "https://developer.download.nvidia.com/cg/",
-              "description": "NVIDIA CG language math reference."
+              "description": "NVIDIA CG language math reference.",
+              "tags": ["Site", "Free"]
             },
             {
               "title": "Mob-sakai UI Effects",
               "url": "https://github.com/mob-sakai/UIEffect",
-              "description": "UIEffect is an open-source package that allows you to intuitively apply rich UI effects directly from the Inspector or via code."
+              "description": "UIEffect is an open-source package that allows you to intuitively apply rich UI effects directly from the Inspector or via code.",
+              "tags": ["Repository", "Free"],
+              "license": "MIT"
             }
           ]
         },
@@ -41,23 +48,29 @@
             {
               "title": "NPR_Lab Library",
               "url": "https://github.com/candycat1992/NPR_Lab",
-              "description": "Candycat1992 project is intended to test some NPR in Unity."
+              "description": "Candycat1992 project is intended to test some NPR in Unity.",
+              "tags": ["Repository", "Free"],
+              "license": "None"
             },
             {
               "title": "[01] Cartoon Rendering from Scratch",
-              "url": "https://zhuanlan.zhihu.com/p/109101851"
+              "url": "https://zhuanlan.zhihu.com/p/109101851",
+              "tags": ["Article", "Free"]
             },
             {
               "title": "[02] Cartoon Rendering from Scratch - Shading Part 1",
-              "url": "https://zhuanlan.zhihu.com/p/110025903"
+              "url": "https://zhuanlan.zhihu.com/p/110025903",
+              "tags": ["Article", "Free"]
             },
             {
               "title": "[02] Cartoon Rendering from Scratch - Shading Part 2",
-              "url": "https://zhuanlan.zhihu.com/p/111633226"
+              "url": "https://zhuanlan.zhihu.com/p/111633226",
+              "tags": ["Article", "Free"]
             },
             {
               "title": "[04] Cartoon Rendering from Scratch - PBR Article",
-              "url": "https://zhuanlan.zhihu.com/p/115238808"
+              "url": "https://zhuanlan.zhihu.com/p/115238808",
+              "tags": ["Article", "Free"]
             }
           ]
         },
@@ -67,11 +80,13 @@
           "resources": [
             {
               "title": "Dithering Shading by Aeris",
-              "url": "https://medium.com/the-bkpt/dithered-shading-tutorial-29f57d06ac39"
+              "url": "https://medium.com/the-bkpt/dithered-shading-tutorial-29f57d06ac39",
+              "tags": ["Article", "Free"]
             },
             {
               "title": "Ronja's Dithering Tutorial",
-              "url": "https://www.ronja-tutorials.com/post/042-dithering"
+              "url": "https://www.ronja-tutorials.com/post/042-dithering",
+              "tags": ["Site", "Free"]
             }
           ]
         },
@@ -81,11 +96,14 @@
           "resources": [
             {
               "title": "Blackbody Chart",
-              "url": "http://www.vendian.org/mncharity/dir3/blackbody"
+              "url": "http://www.vendian.org/mncharity/dir3/blackbody",
+              "tags": ["Site", "Free"]
             },
             {
               "title": "Color Checker EXR Reference",
-              "url": "https://github.com/colour-science/colour-nuke/tree/master/colour_nuke/resources/images/ColorChecker2014"
+              "url": "https://github.com/colour-science/colour-nuke/tree/master/colour_nuke/resources/images/ColorChecker2014",
+              "tags": ["Repository", "Free"],
+              "license": "BSD-3-Clause"
             }
           ]
         },
@@ -96,7 +114,8 @@
             {
               "title": "Texture Repetition",
               "url": "https://iquilezles.org/articles/texturerepetition/",
-              "description": "Texture repetition fix with custom UV Mapping."
+              "description": "Texture repetition fix with custom UV Mapping.",
+              "tags": ["Site", "Free"]
             }
           ]
         }
