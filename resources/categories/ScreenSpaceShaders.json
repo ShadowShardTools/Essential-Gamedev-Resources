@@ -10,7 +10,9 @@
                         {
                             "title": "X-PostProcessing Library",
                             "url": "https://github.com/QianMo/X-PostProcessing-Library",
-                            "description": "High-quality open source post-processing library for Unity engine, aims to provide the industry's mainstream high-quality post-processing effects."
+                            "description": "High-quality open source post-processing library for Unity engine, aims to provide the industry's mainstream high-quality post-processing effects.",
+                            "tags": ["Repository", "Free"],
+                            "license": "MIT"
                         }
                     ]
                 },
@@ -21,12 +23,16 @@
                         {
                             "title": "Robcupisz LightShafts",
                             "url": "https://github.com/robcupisz/LightShafts",
-                            "description": "A light shafts (aka light scattering, aka volumetric shadows) effect for Unity."
+                            "description": "A light shafts (aka light scattering, aka volumetric shadows) effect for Unity.",
+                            "tags": ["Repository", "Free"],
+                            "license": "PD"
                         },
                         {
                             "title": "Math-araujo Screen Space God Rays",
                             "url": "https://github.com/math-araujo/screen-space-godrays",
-                            "description": "Implementation of the paper 'Volumetric Light Scattering as a Post-Process' using OpenGL 4.5"
+                            "description": "Implementation of the paper 'Volumetric Light Scattering as a Post-Process' using OpenGL 4.5",
+                            "tags": ["Repository", "Free"],
+                            "license": "MIT"
                         }
                     ]
                 },
@@ -37,17 +43,21 @@
                         {
                             "title": "Pixel Perfect Outline Article by Doug Valenta",
                             "url": "https://www.videopoetics.com/tutorials/pixel-perfect-outline-shaders-unity",
-                            "description": "An utility to tweak matcaps, with realtime visual feedback."
+                            "description": "An utility to tweak matcaps, with realtime visual feedback.",
+                            "tags": ["Site", "Free"]
                         },
                         {
                             "title": "Rendering Outline Article by Alexander Ameye",
                             "url": "https://ameye.dev/notes/rendering-outlines",
-                            "description": "Different techniques for rendering outlines in Unity."
+                            "description": "Different techniques for rendering outlines in Unity.",
+                            "tags": ["Site", "Free"]
                         },
                         {
                             "title": "Robinseibold URP Outlines",
                             "url": "https://github.com/Robinseibold/Unity-URP-Outlines",
-                            "description": "A custom renderer feature for screen space outlines based on Erik Roystan Ross Outline Shader."
+                            "description": "A custom renderer feature for screen space outlines based on Erik Roystan Ross Outline Shader.",
+                            "tags": ["Repository", "Free"],
+                            "license": "MIT"
                         }
                     ]
                 },
@@ -58,7 +68,9 @@
                         {
                             "title": "Federicocasares Cavity/Curvature",
                             "url": "https://github.com/federicocasares/cavifree",
-                            "description": "Cavifree is a screen space post-processing effect for Unity that mimics the cavity viewport effect found in Blender."
+                            "description": "Cavifree is a screen space post-processing effect for Unity that mimics the cavity viewport effect found in Blender.",
+                            "tags": ["Repository", "Free"],
+                            "license": "MIT"
                         }
                     ]
                 }

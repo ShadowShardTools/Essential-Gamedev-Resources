@@ -10,7 +10,8 @@
                         {
                             "title": "Unity VFX Graph Learning Template",
                             "url": "https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@17.0/manual/sample-learningTemplates.html",
-                            "description": "The Learning Templates sample is a collection of VFX assets designed to help you learn about VFX Graph concepts and features."
+                            "description": "The Learning Templates sample is a collection of VFX assets designed to help you learn about VFX Graph concepts and features.",
+                            "tags": ["Site", "Free"]
                         }
                     ]
                 }

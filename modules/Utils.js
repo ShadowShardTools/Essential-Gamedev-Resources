@@ -10,11 +10,11 @@ export function getTagClass(tag) {
         case 'free/paid':
             return 'border-orange-500 text-orange-500';
         case 'repository':
-            return 'border-blue-500 text-blue-500';
+            return 'border-blue-400 text-blue-400';
         case 'article':
-            return 'border-red-500 text-red-500';
+            return 'border-indigo-400 text-indigo-400';
         case 'video':
-            return 'border-indigo-500 text-indigo-500';
+            return 'border-red-500 text-red-500';
         case 'site':
             return 'border-gray-200 text-gray-200';
         default:
