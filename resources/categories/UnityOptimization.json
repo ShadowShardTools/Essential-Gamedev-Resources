@@ -1,0 +1,25 @@
+{
+    "categories": [
+      {
+        "name": "Unity Optimization",
+        "subcategories": [
+          {
+            "id": "unity-optimization",
+            "name": "Shaders",
+            "resources": [
+              {
+                "title": "ZLinq",
+                "url": "https://github.com/Cysharp/ZLinq",
+                "description": "Zero allocation LINQ with Span and LINQ to SIMD, LINQ to Tree (FileSystem, Json, GameObject, etc.) for all .NET platforms and Unity."
+              },
+              {
+                "title": "ZString",
+                "url": "https://github.com/Cysharp/ZString",
+                "description": "Zero Allocation StringBuilder for .NET and Unity."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
