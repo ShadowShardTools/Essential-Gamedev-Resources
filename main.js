@@ -1,5 +1,5 @@
 // Import all the modular JavaScript files
-import  {loadResourcesData, loadLatestUpdates} from '/modules/Data_Loader.js';
+import  {loadResourcesData, loadLatestUpdates} from './modules/Data_Loader.js';
 import './modules/UI_Renderer.js';
 import './modules/UI_Interactions.js';
 import './modules/Search_Module.js';
