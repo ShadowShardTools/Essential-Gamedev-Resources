@@ -1,14 +1,7 @@
 // Import necessary functions from other modules
 import { renderSidebar, renderContentSections } from './UI_Renderer.js';
 import { setupEventListeners } from './UI_Interactions.js';
-
-// Helper function for fetch with retry capability
-function fetchWithRetry(url, retries = 3) {
-    return fetch(url).catch(err => {
-        if (retries > 0) return fetchWithRetry(url, retries - 1);
-        throw err;
-    });
-}
+import { fetchWithRetry } from './Utils.js';
 
 // Function to load all resources JSON files dynamically
 export function loadResourcesData() {
