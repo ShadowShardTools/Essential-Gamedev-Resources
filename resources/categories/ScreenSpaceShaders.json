@@ -5,12 +5,107 @@
             "subcategories": [
                 {
                     "id": "ss-shader-libraries",
-                    "name": "Shader Libraries",
+                    "name": "Libraries",
                     "resources": [
+                        {
+                            "title": "Kino",
+                            "url": "https://github.com/keijiro/Kino",
+                            "description": "Kino is a collection of custom post-processing effects for Unity's High Definition Render Pipeline (HDRP).",
+                            "tags": ["Repository", "Free"],
+                            "license": "Unlicense"
+                        },
                         {
                             "title": "X-PostProcessing Library",
                             "url": "https://github.com/QianMo/X-PostProcessing-Library",
                             "description": "High-quality open source post-processing library for Unity engine, aims to provide the industry's mainstream high-quality post-processing effects.",
+                            "tags": ["Repository", "Free"],
+                            "license": "MIT"
+                        },
+                        {
+                            "title": "Image Effects for Unity",
+                            "url": "https://github.com/danielshervheim/unity-image-effects",
+                            "description": "A collection of fullscreen image effects for Unity, all of which run in real-time.",
+                            "tags": ["Repository", "Free"],
+                            "license": "BSD-3-Clause"
+                        },
+                        {
+                            "title": "RetroSuite3D",
+                            "url": "https://github.com/oxysoft/RetroSuite3D",
+                            "description": "Some image effects and shaders to achieve a retro look in Unity.",
+                            "tags": ["Repository", "Free"],
+                            "license": "MIT"
+                        }
+                    ]
+                },
+                {
+                    "id": "ss-shader-effects",
+                    "name": "Effects",
+                    "resources": [
+                        {
+                            "title": "Light Leaks Image Effect (by danielzeller)",
+                            "url": "https://github.com/danielzeller/LightLeaksUnity",
+                            "description": "Light Leak Image Effect for unity, with settings for red, yellow, blue, intensity and two different blend modes.",
+                            "tags": ["Repository", "Free"],
+                            "license": "MIT"
+                        },
+                        {
+                            "title": "Dynamic Central Line Camera (by MizoTake)",
+                            "url": "https://github.com/MizoTake/DynamicCentralLineCamera",
+                            "description": "A collection of fullscreen image effects for Unity, all of which run in real-time.",
+                            "tags": ["Repository", "Free"],
+                            "license": "None"
+                        },
+                        {
+                            "title": "KinoFeedback (by keijiro)",
+                            "url": "https://github.com/keijiro/KinoFeedback",
+                            "description": "Oldskool frame buffer feedback effect for Unity",
+                            "tags": ["Repository", "Free"],
+                            "license": "Custom"
+                        },
+                        {
+                            "title": "KinoBloom (by keijiro)",
+                            "url": "https://github.com/keijiro/KinoBloom",
+                            "description": "Bloom is an image effect for Unity that adds bloom/veiling glare effect to rendered frames.",
+                            "tags": ["Repository", "Free"],
+                            "license": "MIT"
+                        },
+                        {
+                            "title": "SonarFX (by keijiro)",
+                            "url": "https://github.com/keijiro/SonarFx",
+                            "description": "SonarFx is a full-screen effect for Unity. It renders animated wave-like patterns on the all surfaces in the scene.",
+                            "tags": ["Repository", "Free"],
+                            "license": "MIT"
+                        },
+                        {
+                            "title": "KinoGlitch (by keijiro)",
+                            "url": "https://github.com/keijiro/SonarFx",
+                            "description": "KinoGlitch is a collection of glitch video effects. At the moment, it provides two types of glitch effects.",
+                            "tags": ["Repository", "Free"],
+                            "license": "Custom"
+                        }
+                    ]
+                },
+                {
+                    "id": "ss-shader-filters",
+                    "name": "Filters",
+                    "resources": [
+                        {
+                            "title": "Water Color Filter (by nobnak)",
+                            "url": "https://github.com/nobnak/WaterColorFilter",
+                            "description": "Tone-based diffuse shading, wobbing, edge darkening, paper effect.",
+                            "tags": ["Repository", "Free"],
+                            "license": "MIT"
+                        },
+                        {
+                            "title": "Old Monitor Shader (by jfranmora)",
+                            "url": "https://github.com/jfranmora/unity-postprocessing-old-monitor-shader",
+                            "tags": ["Repository", "Free"],
+                            "license": "MIT"
+                        },
+                        {
+                            "title": "Binary (by keijiro)",
+                            "url": "https://github.com/keijiro/KinoBinary",
+                            "description": "Binary is a binary image (thresholding/dithering) filter for Unity.",
                             "tags": ["Repository", "Free"],
                             "license": "MIT"
                         }
@@ -21,18 +116,32 @@
                     "name": "Lighting",
                     "resources": [
                         {
-                            "title": "Robcupisz LightShafts",
+                            "title": "Light Shafts (by Robcupisz)",
                             "url": "https://github.com/robcupisz/LightShafts",
                             "description": "A light shafts (aka light scattering, aka volumetric shadows) effect for Unity.",
                             "tags": ["Repository", "Free"],
                             "license": "PD"
                         },
                         {
-                            "title": "Math-araujo Screen Space God Rays",
+                            "title": "Screen Space God Rays (by Math-araujo)",
                             "url": "https://github.com/math-araujo/screen-space-godrays",
                             "description": "Implementation of the paper 'Volumetric Light Scattering as a Post-Process' using OpenGL 4.5",
                             "tags": ["Repository", "Free"],
                             "license": "MIT"
+                        },
+                        {
+                          "title": "2D Water surface(reflections) in Unity3D (by valryon)",
+                          "url": "hhttps://github.com/valryon/water2d-unity",
+                          "description": "A simple shader + example of a water surface with reflection in 2D.",
+                          "tags": ["Repository", "Free"],
+                          "license": "MIT"
+                        },
+                        {
+                          "title": "KinoFog (by keijiro)",
+                          "url": "https://github.com/keijiro/KinoFog",
+                          "description": "KinoFog is a replacement for the global fog effect in the Unity standard assets. The main difference is the addition of the fade-to-skybox mode.",
+                          "tags": ["Repository", "Free"],
+                          "license": "Custom"
                         }
                     ]
                 },
@@ -41,21 +150,47 @@
                     "name": "Outline",
                     "resources": [
                         {
-                            "title": "Pixel Perfect Outline Article by Doug Valenta",
+                            "title": "UnityFx.Outline",
+                            "url": "https://github.com/Arvtesh/UnityFx.Outline",
+                            "description": "UnityFx.Outline implements configurable per-object and per-camera outlines. Both solid and blurred outline modes are supported (Gauss blur).",
+                            "tags": ["Repository", "Free"],
+                            "license": "MIT"
+                        },
+                        {
+                            "title": "Pixel Perfect Outline Article (by Doug Valenta)",
                             "url": "https://www.videopoetics.com/tutorials/pixel-perfect-outline-shaders-unity",
                             "description": "An utility to tweak matcaps, with realtime visual feedback.",
                             "tags": ["Site", "Free"]
                         },
                         {
-                            "title": "Rendering Outline Article by Alexander Ameye",
+                            "title": "Rendering Outline Article (by Alexander Ameye)",
                             "url": "https://ameye.dev/notes/rendering-outlines",
                             "description": "Different techniques for rendering outlines in Unity.",
                             "tags": ["Site", "Free"]
                         },
                         {
-                            "title": "Robinseibold URP Outlines",
+                            "title": "URP Outlines (by Robinseibold)",
                             "url": "https://github.com/Robinseibold/Unity-URP-Outlines",
                             "description": "A custom renderer feature for screen space outlines based on Erik Roystan Ross Outline Shader.",
+                            "tags": ["Repository", "Free"],
+                            "license": "MIT"
+                        },
+                        {
+                            "title": "Contour (by keijiro)",
+                            "url": "https://github.com/keijiro/KinoContour",
+                            "description": "Contour is a contour line (edge detection) filter for Unity.",
+                            "tags": ["Repository", "Free"],
+                            "license": "MIT"
+                        }
+                    ]
+                },
+                {
+                    "id": "ss-shader-raymarching",
+                    "name": "Raymarching",
+                    "resources": [
+                        {
+                            "title": "Volume Clouds (by yangrc1234)",
+                            "url": "https://github.com/yangrc1234/VolumeCloud",
                             "tags": ["Repository", "Free"],
                             "license": "MIT"
                         }
@@ -63,10 +198,10 @@
                 },
                 {
                     "id": "ss-shader-reconstruction",
-                    "name": "Screen Space Reconstruction",
+                    "name": "Reconstruction",
                     "resources": [
                         {
-                            "title": "Federicocasares Cavity/Curvature",
+                            "title": "Cavifree - cavity and curvature (by Federicocasares)",
                             "url": "https://github.com/federicocasares/cavifree",
                             "description": "Cavifree is a screen space post-processing effect for Unity that mimics the cavity viewport effect found in Blender.",
                             "tags": ["Repository", "Free"],

@@ -15,14 +15,14 @@
               "license": "Unity Reference Only"
             },
             {
-              "title": "GlitchEnzo NuGet For Unity",
+              "title": "NuGet For Unity (by GlitchEnzo)",
               "url": "https://github.com/GlitchEnzo/NuGetForUnity",
               "description": "A NuGet Package Manager for Unity.",
               "tags": ["Repository", "Free"],
               "license": "MIT"
             },
             {
-              "title": "Starikcetin Eflatun.SceneReference",
+              "title": "Eflatun.SceneReference (by Starikcetin)",
               "url": "https://github.com/starikcetin/Eflatun.SceneReference",
               "description": "Unity Scene References for Runtime and Editor. Strongly typed, robust, and reliable. Provides GUID, Path, Build Index, Name, and Address.",
               "tags": ["Repository", "Free"],
@@ -38,11 +38,31 @@
           ]
         },
         {
+          "id": "unity-runtime-physics",
+          "name": "Physics",
+          "resources": [
+            {
+              "title": "Naughty Water Buoyancy (by dbrizov)",
+              "url": "https://github.com/dbrizov/NaughtyWaterBuoyancy",
+              "description": "Water Buoyancy Simulation for Unity.",
+              "tags": ["Repository", "Free"],
+              "license": "MIT"
+            },
+            {
+              "title": "Trajectory Line Unity (by Matthew-J-Spencer)",
+              "url": "https://github.com/Matthew-J-Spencer/Trajectory-Line-Unity",
+              "description": "A powerful trajectory line for Unity.",
+              "tags": ["Repository", "Free"],
+              "license": "MIT"
+            }
+          ]
+        },
+        {
           "id": "unity-runtime-ingame-ai",
           "name": "In-Game AI",
           "resources": [
             {
-              "title": "Crashkonijn Unity GOAP",
+              "title": "Unity GOAP (by Crashkonijn)",
               "url": "https://github.com/crashkonijn/GOAP",
               "description": "A robust, multi-threaded Goal Oriented Action Planning (GOAP) system designed for Unity, empowering developers to create complex AI behaviors with ease.",
               "tags": ["Repository", "Free"],
@@ -95,14 +115,14 @@
           "name": "Math Libraries",
           "resources": [
             {
-              "title": "FreyaHolmer Mathf's",
+              "title": "Mathf's (by FreyaHolmer)",
               "url": "https://github.com/FreyaHolmer/Mathfs",
               "description": "Expanded math functionality for Unity by FreyaHolmer.",
               "tags": ["Repository", "Free"],
               "license": "MIT"
             },
             {
-              "title": "Zalo Math Utilities",
+              "title": "Math Utilities (by Zalo)",
               "url": "https://github.com/zalo/MathUtilities",
               "description": "A grab bag of some of the neat math and physics tricks that Zalo amassed over the last few years, implemented in Unity's C#. You're free to use the code here however you like.",
               "tags": ["Repository", "Free"],
@@ -115,7 +135,7 @@
           "name": "Debug",
           "resources": [
             {
-              "title": "Yasirkula In-Game Debug Console",
+              "title": "In-Game Debug Console (by Yasirkula)",
               "url": "https://github.com/yasirkula/UnityIngameDebugConsole",
               "description": "A uGUI based console to see debug messages and execute commands during gameplay in Unity",
               "tags": ["Repository", "Free"],

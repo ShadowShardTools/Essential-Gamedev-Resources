@@ -1,0 +1,27 @@
+{
+    "categories": [
+      {
+        "name": "3D Graphics",
+        "subcategories": [
+          {
+            "id": "3d-graphics-software",
+            "name": "Software",
+            "resources": [
+              {
+                "title": "Blockbench",
+                "url": "https://www.blockbench.net/",
+                "description": "A low-poly 3D model editor",
+                "tags": ["Site", "Free"]
+              },
+              {
+                "title": "Meshlab",
+                "url": "https://www.blockbench.net/",
+                "description": "The open source system for processing and editing 3D triangular meshes. It provides a set of tools for editing, cleaning, healing, inspecting, rendering, texturing and converting meshes",
+                "tags": ["Site", "Free"]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

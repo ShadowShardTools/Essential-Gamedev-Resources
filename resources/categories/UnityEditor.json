@@ -4,11 +4,11 @@
       "name": "Unity Editor",
       "subcategories": [
         {
-          "id": "editor-2d",
+          "id": "editor-2d-tools",
           "name": "2D Tools",
           "resources": [
             {
-              "title": "Dual-Grid Tile System",
+              "title": "Dual-Grid Tile System (by jess::codes)",
               "url": "https://youtu.be/jEWFSv3ivTg?si=-xv_DvwZa7uldMBB",
               "description": "Dual-Grid Tile system for Unity and Godot by jess::codes.",
               "tags": ["Video", "Free"]
@@ -16,20 +16,26 @@
           ]
         },
         {
-          "id": "editor-3d",
+          "id": "editor-3d-tools",
           "name": "3D Tools",
           "resources": [
             {
-              "title": "Dynamic Bones",
+              "title": "Dynamic Bones (by OneYoungMean)",
               "url": "https://github.com/OneYoungMean/Automatic-DynamicBone",
               "description": "Unity bone cloth spring system.",
               "tags": ["Repository", "Free"],
               "license": "MIT"
+            },
+            {
+              "title": "Easy Collider",
+              "url": "https://assetstore.unity.com/packages/tools/physics/easy-collider-311864",
+              "description": "Add, Remove & Preview Colliders with Ease!",
+              "tags": ["Site", "Free"]
             }
           ]
         },
         {
-          "id": "editor-text",
+          "id": "editor-text-tools",
           "name": "Text Tools",
           "resources": [
             {
@@ -68,7 +74,7 @@
           ]
         },
         {
-          "id": "editor-textures",
+          "id": "editor-textures-tools",
           "name": "Texture Tools",
           "resources": [
             {
