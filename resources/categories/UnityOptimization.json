@@ -4,16 +4,18 @@
       "name": "Unity Optimization",
       "subcategories": [
         {
-          "id": "unity-optimization-build-time",
-          "name": "Build Time",
+          "id": "unity-optimization-general",
+          "name": "General",
           "resources": [
+            {
+              "title": "Optimize your mobile game performance (Unity 2022 LTS)",
+              "url": "https://unity.com/resources/optimize-mobile-game-performance-unity-2022lts",
+              "tags": ["Article", "Free"]
+            },
             {
               "title": "Unity Shader Variants Optimization & Troubleshooting Tips",
               "url": "https://unity.com/blog/engine-platform/shader-variants-optimization-troubleshooting-tips",
-              "tags": [
-                "Article",
-                "Free"
-              ]
+              "tags": ["Article", "Free"]
             }
           ]
         }

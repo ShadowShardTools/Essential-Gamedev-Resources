@@ -10,34 +10,27 @@
             {
               "title": "Godot Shader Library",
               "url": "https://godotshaders.com",
-              "description": "Godot Shaders is a community-driven shader library for the Godot game engine.",
+              "description": "Godot Shaders is a community-driven shader library for the Godot game engine",
               "tags": ["Repository", "Free"]
             },
             {
               "title": "Advanced Computer Graphics",
               "url": "https://cglearn.eu/pub/advanced-computer-graphics",
-              "description": "Computer Graphics Learning Materials by University of Tartu.",
+              "description": "Computer Graphics Learning Materials by University of Tartu",
               "tags": ["Site", "Free"]
             },
             {
               "title": "Zoroiscrying Library",
               "url": "https://github.com/Zoroiscrying/Unity_Shader_Library_Zoroiscrying",
-              "description": "Shader library used for unity shader coding, pointing to different shader effects found from various sources.",
+              "description": "Shader library used for unity shader coding, pointing to different shader effects found from various sources",
               "tags": ["Repository", "Free"],
               "license": "MIT"
             },
             {
               "title": "NVIDIA CG Documentation",
               "url": "https://developer.download.nvidia.com/cg/",
-              "description": "NVIDIA CG language math reference.",
+              "description": "NVIDIA CG language math reference",
               "tags": ["Site", "Free"]
-            },
-            {
-              "title": "Mob-sakai UI Effects",
-              "url": "https://github.com/mob-sakai/UIEffect",
-              "description": "UIEffect is an open-source package that allows you to intuitively apply rich UI effects directly from the Inspector or via code.",
-              "tags": ["Repository", "Free"],
-              "license": "MIT"
             }
           ]
         },
@@ -54,7 +47,7 @@
             {
               "title": "2D Shadow",
               "url": "https://github.com/unitycoder/2DShadow",
-              "description": "2D Visibility / Shadow casting converted to Unity C#.",
+              "description": "2D Visibility / Shadow casting converted to Unity C#",
               "tags": ["Repository", "Free"],
               "license": "Unlicense"
             }
@@ -67,7 +60,7 @@
             {
               "title": "NPR_Lab Library (by Candycat1992)",
               "url": "https://github.com/candycat1992/NPR_Lab",
-              "description": "Project is intended to test some NPR in Unity.",
+              "description": "Project is intended to test some NPR in Unity",
               "tags": ["Repository", "Free"],
               "license": "None"
             },
@@ -122,7 +115,7 @@
             {
               "title": "Unity dithered transparency shader (by gkjohnson)",
               "url": "https://github.com/gkjohnson/unity-dithered-transparency-shader",
-              "description": "Unity material and shader for applying clipped, dithered transparency.",
+              "description": "Unity material and shader for applying clipped, dithered transparency",
               "tags": ["Repository", "Free"],
               "license": "MIT"
             }
@@ -135,21 +128,21 @@
             {
               "title": "Water Demo (by Shane Celis)",
               "url": "https://github.com/shanecelis/water-demo",
-              "description": "This is a port of Evan Wallace's Water Demo from WebGL to Unity.",
+              "description": "This is a port of Evan Wallace's Water Demo from WebGL to Unity",
               "tags": ["Repository", "Free"],
               "license": "MIT"
             },
             {
               "title": "Lowpoly Water Shader Unity (by danielzeller)",
               "url": "https://github.com/danielzeller/Lowpoly-Water-Unity",
-              "description": "A lowpoly water shader similar to the awesome water in Monument Valley.",
+              "description": "A lowpoly water shader similar to the awesome water in Monument Valley",
               "tags": ["Repository", "Free"],
               "license": "MIT"
             },
             {
               "title": "Toon Water Shader (by IronWarrior)",
               "url": "https://github.com/IronWarrior/ToonWaterShader",
-              "description": "Source code for Toon Water Shader tutorial for Unity. Renders and animates toon-style waves from a noise texture and generates shoreline foam based off the depth buffer.",
+              "description": "Source code for Toon Water Shader tutorial for Unity. Renders and animates toon-style waves from a noise texture and generates shoreline foam based off the depth buffer",
               "tags": ["Repository", "Free"],
               "license": "Unlicense"
             }
@@ -162,7 +155,7 @@
             {
               "title": "HoloShield",
               "url": "https://github.com/AdultLink/HoloShield",
-              "description": "Highly customizable sci-fi shield / force field shader for Unity3D. Allows you to set edge power & color, inner texture scrolling, waviness, scale pulsation and procedural intensity noise.",
+              "description": "Highly customizable sci-fi shield / force field shader for Unity3D. Allows you to set edge power & color, inner texture scrolling, waviness, scale pulsation and procedural intensity noise",
               "tags": ["Repository", "Free"],
               "license": "MIT"
             },
@@ -175,7 +168,7 @@
             {
               "title": "Spektr/Lightning (by keijiro)",
               "url": "https://github.com/keijiro/SpektrLightning",
-              "description": "Draws electric bolts between given two points.",
+              "description": "Draws electric bolts between given two points",
               "tags": ["Repository", "Free"],
               "license": "Custom"
             }
@@ -205,7 +198,7 @@
             {
               "title": "Texture Repetition",
               "url": "https://iquilezles.org/articles/texturerepetition/",
-              "description": "Texture repetition fix with custom UV Mapping.",
+              "description": "Texture repetition fix with custom UV Mapping",
               "tags": ["Site", "Free"]
             }
           ]

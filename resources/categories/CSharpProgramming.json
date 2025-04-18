@@ -10,21 +10,21 @@
             {
               "title": "Silk.NET",
               "url": "https://github.com/dotnet/Silk.NET",
-              "description": "Silk.NET is your one-stop-shop for high-speed .NET multimedia, graphics, and compute; providing bindings to popular low-level APIs such as OpenGL, OpenCL, OpenAL, OpenXR, GLFW, SDL, Vulkan, Assimp, WebGPU, and DirectX.",
+              "description": "Silk.NET is your one-stop-shop for high-speed .NET multimedia, graphics, and compute; providing bindings to popular low-level APIs such as OpenGL, OpenCL, OpenAL, OpenXR, GLFW, SDL, Vulkan, Assimp, WebGPU, and DirectX",
               "tags": ["Repository", "Free"],
               "license": "MIT"
             },
             {
               "title": "ZLinq",
               "url": "https://github.com/Cysharp/ZLinq",
-              "description": "Zero allocation LINQ with Span and LINQ to SIMD, LINQ to Tree (FileSystem, Json, GameObject, etc.) for all .NET platforms and Unity.",
+              "description": "Zero allocation LINQ with Span and LINQ to SIMD, LINQ to Tree (FileSystem, Json, GameObject, etc.) for all .NET platforms and Unity",
               "tags": ["Repository", "Free"],
               "license": "MIT"
             },
             {
               "title": "ZString",
               "url": "https://github.com/Cysharp/ZString",
-              "description": "Zero Allocation StringBuilder for .NET and Unity.",
+              "description": "Zero Allocation StringBuilder for .NET and Unity",
               "tags": ["Repository", "Free"],
               "license": "MIT"
             }

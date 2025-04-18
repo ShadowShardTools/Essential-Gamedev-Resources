@@ -10,30 +10,85 @@
             {
               "title": "Unity Cs Reference",
               "url": "https://github.com/Unity-Technologies/UnityCsReference",
-              "description": "The C# part of the Unity engine and editor source code. May be used for reference purposes only.",
+              "description": "The C# part of the Unity engine and editor source code. May be used for reference purposes only",
               "tags": ["Repository", "Free"],
               "license": "Unity Reference Only"
             },
             {
               "title": "NuGet For Unity (by GlitchEnzo)",
               "url": "https://github.com/GlitchEnzo/NuGetForUnity",
-              "description": "A NuGet Package Manager for Unity.",
+              "description": "A NuGet Package Manager for Unity",
               "tags": ["Repository", "Free"],
               "license": "MIT"
             },
             {
               "title": "Eflatun.SceneReference (by Starikcetin)",
               "url": "https://github.com/starikcetin/Eflatun.SceneReference",
-              "description": "Unity Scene References for Runtime and Editor. Strongly typed, robust, and reliable. Provides GUID, Path, Build Index, Name, and Address.",
+              "description": "Unity Scene References for Runtime and Editor. Strongly typed, robust, and reliable. Provides GUID, Path, Build Index, Name, and Address",
               "tags": ["Repository", "Free"],
               "license": "MIT"
             },
             {
               "title": "Open UPM CLI",
               "url": "https://github.com/openupm/openupm-cli",
-              "description": "The command-line tool to maintain the Unity manifest file for 3rd-party upm registries, offering a similar but lighter experience like npm or yarn for Node.js.",
+              "description": "The command-line tool to maintain the Unity manifest file for 3rd-party upm registries, offering a similar but lighter experience like npm or yarn for Node.js",
               "tags": ["Repository", "Free"],
               "license": "BSD-3-Clause"
+            }
+          ]
+        },
+        {
+          "id": "unity-runtime-ugui",
+          "name": "uGUI",
+          "resources": [
+            {
+              "title": "Unity Simple File Browser",
+              "url": "https://github.com/yasirkula/UnitySimpleFileBrowser",
+              "description": "A uGUI based runtime file browser for Unity 3D (draggable and resizable)",
+              "tags": ["Repository", "Free"],
+              "license": "MIT"
+            },
+            {
+              "title": "XChart",
+              "url": "https://github.com/XCharts-Team/XCharts",
+              "description": "A charting and data visualization library for Unity",
+              "tags": ["Repository", "Free"],
+              "license": "MIT"
+            },
+            {
+              "title": "Fancy Scroll View",
+              "url": "https://github.com/setchi/FancyScrollView",
+              "description": "A versatile Unity scroll view component that enables highly flexible animations",
+              "tags": ["Repository", "Free"],
+              "license": "MIT"
+            },
+            {
+              "title": "UI Effects",
+              "url": "https://github.com/mob-sakai/UIEffect",
+              "description": "UIEffect is an open-source package that allows you to intuitively apply rich UI effects directly from the Inspector or via code",
+              "tags": ["Repository", "Free"],
+              "license": "MIT"
+            },
+            {
+              "title": "Particle Effect For uGUI",
+              "url": "https://github.com/mob-sakai/ParticleEffectForUGUI",
+              "description": "Render particle effect in UnityUI(uGUI). Maskable, sortable, and no extra Camera/RenderTexture/Canvas",
+              "tags": ["Repository", "Free"],
+              "license": "MIT"
+            },
+            {
+              "title": "Soft Mask For uGUI",
+              "url": "https://github.com/mob-sakai/SoftMaskForUGUI",
+              "description": "Enhance Unity UI (uGUI) with advanced soft-masking features to create more visually appealing effects",
+              "tags": ["Repository", "Free"],
+              "license": "MIT"
+            },
+            {
+              "title": "HSV Color Picker",
+              "url": "https://github.com/judah4/HSV-Color-Picker-Unity",
+              "description": "HSV color picker for uGUI",
+              "tags": ["Repository", "Free"],
+              "license": "MIT"
             }
           ]
         },
@@ -44,14 +99,14 @@
             {
               "title": "Naughty Water Buoyancy (by dbrizov)",
               "url": "https://github.com/dbrizov/NaughtyWaterBuoyancy",
-              "description": "Water Buoyancy Simulation for Unity.",
+              "description": "Water Buoyancy Simulation for Unity",
               "tags": ["Repository", "Free"],
               "license": "MIT"
             },
             {
               "title": "Trajectory Line Unity (by Matthew-J-Spencer)",
               "url": "https://github.com/Matthew-J-Spencer/Trajectory-Line-Unity",
-              "description": "A powerful trajectory line for Unity.",
+              "description": "A powerful trajectory line for Unity",
               "tags": ["Repository", "Free"],
               "license": "MIT"
             }
@@ -64,7 +119,7 @@
             {
               "title": "Unity GOAP (by Crashkonijn)",
               "url": "https://github.com/crashkonijn/GOAP",
-              "description": "A robust, multi-threaded Goal Oriented Action Planning (GOAP) system designed for Unity, empowering developers to create complex AI behaviors with ease.",
+              "description": "A robust, multi-threaded Goal Oriented Action Planning (GOAP) system designed for Unity, empowering developers to create complex AI behaviors with ease",
               "tags": ["Repository", "Free"],
               "license": "Apache 2.0"
             }
@@ -77,7 +132,7 @@
             {
               "title": "UniTask",
               "url": "https://github.com/Cysharp/UniTask",
-              "description": "Provides an efficient allocation free async/await integration for Unity.",
+              "description": "Provides an efficient allocation free async/await integration for Unity",
               "tags": ["Repository", "Free"],
               "license": "MIT"
             }
@@ -90,21 +145,21 @@
             {
               "title": "VContainer",
               "url": "https://github.com/hadashiA/VContainer",
-              "description": "The extra fast, feature full, Dependency Injection library running on Unity Game Engine.",
+              "description": "The extra fast, feature full, Dependency Injection library running on Unity Game Engine",
               "tags": ["Repository", "Free"],
               "license": "MIT"
             },
             {
               "title": "Extenject [Deprecated]",
               "url": "https://github.com/Mathijs-Bakker/Extenject",
-              "description": "Old, but still useful, dependency injection framework for Unity; industrial standard.",
+              "description": "Old, but still useful, dependency injection framework for Unity; industrial standard",
               "tags": ["Repository", "Free"],
               "license": "MIT"
             },
             {
               "title": "Reflex",
               "url": "https://github.com/gustavopsantos/Reflex",
-              "description": "Blazing fast, minimal but complete(except of il2cpp problems) dependency injection library for Unity.",
+              "description": "Blazing fast, minimal but complete(except of il2cpp problems) dependency injection library for Unity",
               "tags": ["Repository", "Free"],
               "license": "MIT"
             }
@@ -117,14 +172,14 @@
             {
               "title": "Mathf's (by FreyaHolmer)",
               "url": "https://github.com/FreyaHolmer/Mathfs",
-              "description": "Expanded math functionality for Unity by FreyaHolmer.",
+              "description": "Expanded math functionality for Unity by FreyaHolmer",
               "tags": ["Repository", "Free"],
               "license": "MIT"
             },
             {
               "title": "Math Utilities (by Zalo)",
               "url": "https://github.com/zalo/MathUtilities",
-              "description": "A grab bag of some of the neat math and physics tricks that Zalo amassed over the last few years, implemented in Unity's C#. You're free to use the code here however you like.",
+              "description": "A grab bag of some of the neat math and physics tricks that Zalo amassed over the last few years, implemented in Unity's C#. You're free to use the code here however you like",
               "tags": ["Repository", "Free"],
               "license": "Unlicense"
             }
@@ -135,9 +190,16 @@
           "name": "Debug",
           "resources": [
             {
-              "title": "In-Game Debug Console (by Yasirkula)",
+              "title": "In-Game Debug Console",
               "url": "https://github.com/yasirkula/UnityIngameDebugConsole",
               "description": "A uGUI based console to see debug messages and execute commands during gameplay in Unity",
+              "tags": ["Repository", "Free"],
+              "license": "MIT"
+            },
+            {
+              "title": "Graphy",
+              "url": "https://github.com/Tayx94/graphy",
+              "description": "Graphy is the ultimate, easy to use, feature packed FPS counter, stats monitor and debugger for your Unity project",
               "tags": ["Repository", "Free"],
               "license": "MIT"
             }
