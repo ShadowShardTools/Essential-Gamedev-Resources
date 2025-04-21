@@ -1,8 +1,11 @@
 {
     "files": [
+        "3D-Graphics.json",
+        "2D-Graphics.json",
         "CSharpProgramming.json",
         "UnityRuntime.json",
         "UnityEditor.json",
+        "UnityOptimization.json",
         "GeneralShaders.json",
         "ScreenSpaceShaders.json",
         "Textures.json",

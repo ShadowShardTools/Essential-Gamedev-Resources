@@ -1,0 +1,92 @@
+{
+  "categories": [
+    {
+      "name": "3D Graphics",
+      "subcategories": [
+        {
+          "id": "3d-graphics-foundations",
+          "name": "Foundations",
+          "resources": [
+            {
+              "title": "Dimensions",
+              "url": "https://www.dimensions.com/",
+              "description": "Dimensions.com is an ongoing reference database of dimensioned drawings documenting the standard measurements and sizes of the everyday objects and spaces that make up our world",
+              "tags": [
+                "Site",
+                "Free/Paid"
+              ]
+            },
+            {
+              "title": "PhysicallyBased Materials",
+              "url": "https://physicallybased.info/",
+              "description": "A database of physically based values for CG artists",
+              "tags": [
+                "Site",
+                "Free"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3d-graphics-software",
+          "name": "Software",
+          "resources": [
+            {
+              "title": "Blender",
+              "url": "https://www.blender.org/",
+              "description": "Blender is a free and open-source 3D creation suite that supports the entire 3D pipeline",
+              "tags": [
+                "Site",
+                "Free"
+              ]
+            },
+            {
+              "title": "Blockbench",
+              "url": "https://www.blockbench.net/",
+              "description": "A low-poly 3D model editor",
+              "tags": [
+                "Site",
+                "Free"
+              ]
+            },
+            {
+              "title": "Meshlab",
+              "url": "https://www.meshlab.net/",
+              "description": "The open source system for processing and editing 3D triangular meshes. It provides a set of tools for editing, cleaning, healing, inspecting, rendering, texturing and converting meshes",
+              "tags": [
+                "Site",
+                "Free"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3d-graphics-sample-scenes",
+          "name": "Sample Scenes",
+          "resources": [
+            {
+              "title": "Amazon Lumberyard Bistro",
+              "url": "https://developer.nvidia.com/orca/amazon-lumberyard-bistro",
+              "description": "Realtime environment created for GDC 2017 Amazon showcase",
+              "tags": [
+                "Site",
+                "Free"
+              ],
+              "license": "CC-BY 4.0"
+            },
+            {
+              "title": "Classic Sponza - Unity Remaster",
+              "url": "https://github.com/Unity-Technologies/Classic-Sponza",
+              "description": "Unity remaster of the classic Sponza scene",
+              "tags": [
+                "Repository",
+                "Free"
+              ],
+              "license": "Mixed"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

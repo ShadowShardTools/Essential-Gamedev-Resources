@@ -1,29 +1,25 @@
 {
-    "categories": [
-      {
-        "name": "Unity Optimization",
-        "subcategories": [
-          {
-            "id": "unity-optimization",
-            "name": "Shaders",
-            "resources": [
-              {
-                "title": "ZLinq",
-                "url": "https://github.com/Cysharp/ZLinq",
-                "description": "Zero allocation LINQ with Span and LINQ to SIMD, LINQ to Tree (FileSystem, Json, GameObject, etc.) for all .NET platforms and Unity.",
-                "tags": ["Repository", "Free"],
-                "license": "MIT"
-              },
-              {
-                "title": "ZString",
-                "url": "https://github.com/Cysharp/ZString",
-                "description": "Zero Allocation StringBuilder for .NET and Unity.",
-                "tags": ["Repository", "Free"],
-                "license": "MIT"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
+  "categories": [
+    {
+      "name": "Unity Optimization",
+      "subcategories": [
+        {
+          "id": "unity-optimization-general",
+          "name": "General",
+          "resources": [
+            {
+              "title": "Optimize your mobile game performance (Unity 2022 LTS)",
+              "url": "https://unity.com/resources/optimize-mobile-game-performance-unity-2022lts",
+              "tags": ["Article", "Free"]
+            },
+            {
+              "title": "Unity Shader Variants Optimization & Troubleshooting Tips",
+              "url": "https://unity.com/blog/engine-platform/shader-variants-optimization-troubleshooting-tips",
+              "tags": ["Article", "Free"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+    "categories": [
+      {
+        "name": "2D Graphics",
+        "subcategories": [
+          {
+            "id": "2d-graphics",
+            "name": "Utils",
+            "resources": [
+              {
+                "title": "Free Sprite Sheet Packer",
+                "url": "https://www.codeandweb.com/free-sprite-sheet-packer",
+                "tags": ["Site", "Free"]
+              },
+              {
+                "title": "Sprite Sheet Animator",
+                "url": "https://is.si/animator/",
+                "tags": ["Site", "Free"]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

@@ -4,52 +4,93 @@
       "name": "Unity Editor",
       "subcategories": [
         {
-          "id": "editor-2d",
+          "id": "editor-2d-tools",
           "name": "2D Tools",
           "resources": [
             {
-              "title": "Dual-Grid Tile System",
+              "title": "Dual-Grid Tile System (by jess::codes)",
               "url": "https://youtu.be/jEWFSv3ivTg?si=-xv_DvwZa7uldMBB",
-              "description": "Dual-Grid Tile system for Unity and Godot by jess::codes.",
+              "description": "Dual-Grid Tile system for Unity and Godot by jess::codes",
               "tags": ["Video", "Free"]
-            }
-          ]
-        },
-        {
-          "id": "editor-3d",
-          "name": "3D Tools",
-          "resources": [
+            },
             {
-              "title": "Dynamic Bones",
-              "url": "https://github.com/OneYoungMean/Automatic-DynamicBone",
-              "description": "Unity bone cloth spring system.",
+              "title": "Auto9Slicer (by kyubuns)",
+              "url": "https://github.com/kyubuns/Auto9Slicer",
+              "description": "Auto 9 slice sprite generator on Unity",
+              "tags": ["Repository", "Free"],
+              "license": "MIT"
+            },
+            {
+              "title": "Polygon Collider Simplification (by j-bbr)",
+              "url": "https://github.com/j-bbr/PolygonColliderSimplification",
+              "description": "A set of scripts to reduce the complexity of Polygon2D and Edge Colliders in Unity",
+              "tags": ["Repository", "Free"],
+              "license": "MIT"
+            },
+            {
+              "title": "Sprite Dicing",
+              "url": "https://github.com/elringus/sprite-dicing",
+              "description": "Cross-engine tool for lossless compression of sprites with identical areas",
               "tags": ["Repository", "Free"],
               "license": "MIT"
             }
           ]
         },
         {
-          "id": "editor-text",
+          "id": "editor-3d-tools",
+          "name": "3D Tools",
+          "resources": [
+            {
+              "title": "Dynamic Bones (by OneYoungMean)",
+              "url": "https://github.com/OneYoungMean/Automatic-DynamicBone",
+              "description": "Unity bone cloth spring system",
+              "tags": ["Repository", "Free"],
+              "license": "MIT"
+            },
+            {
+              "title": "Easy Collider",
+              "url": "https://assetstore.unity.com/packages/tools/physics/easy-collider-311864",
+              "description": "Add, Remove & Preview Colliders with Ease",
+              "tags": ["Site", "Free"]
+            },
+            {
+              "title": "Curve Modifier (by leon196)",
+              "url": "https://github.com/leon196/CurveModifier",
+              "description": "Implementation of the curve modifier from Blender to Unity3D",
+              "tags": ["Repository", "Free"],
+              "license": "GPL 3.0"
+            },
+            {
+              "title": "Deform",
+              "url": "https://github.com/keenanwoodall/Deform",
+              "description": "A fully-featured deformer system for Unity that lets you stack effects to animate models in real-time",
+              "tags": ["Repository", "Free"],
+              "license": "MIT"
+            }
+          ]
+        },
+        {
+          "id": "editor-text-tools",
           "name": "Text Tools",
           "resources": [
             {
               "title": "Node-Based Dialog System",
               "url": "https://github.com/merpheus-dev/NodeBasedDialogueSystem",
-              "description": "This is a node-based visual narrative flow creation tool that uses Unity's GraphView API.",
+              "description": "This is a node-based visual narrative flow creation tool that uses Unity's GraphView API",
               "tags": ["Repository", "Free"],
               "license": "MIT"
             },
             {
-              "title": "AlicanHasirci TextTween",
+              "title": "TextTween (by AlicanHasirci)",
               "url": "https://github.com/AlicanHasirci/TextTween",
-              "description": "TextTween is a lightweight Unity library designed to animate TextMesh Pro (TMP) texts with high performance.",
+              "description": "TextTween is a lightweight Unity library designed to animate TextMesh Pro (TMP) texts with high performance",
               "tags": ["Repository", "Free"],
               "license": "MIT"
             },
             {
-              "title": "Luca3317 TMP Effects",
+              "title": "TMP Effects (by Luca3317)",
               "url": "https://github.com/Luca3317/TMPEffects",
-              "description": "Easily animate Unity TMP text and apply other effects with custom tags.",
+              "description": "Easily animate Unity TMP text and apply other effects with custom tags",
               "tags": ["Repository", "Free"],
               "license": "MIT"
             }
@@ -60,22 +101,50 @@
           "name": "IMGUI",
           "resources": [
             {
+              "title": "MyBox",
+              "url": "https://github.com/Deadcows/MyBox",
+              "description": "MyBox is a set of attributes, tools and extensions for Unity",
+              "tags": ["Repository", "Free"],
+              "license": "MIT"
+            },
+            {
+              "title": "Custom Toolbar (by smkplus)",
+              "url": "https://github.com/smkplus/CustomToolbar",
+              "description": "This custom tool helps you to test and develop your game easily",
+              "tags": ["Repository", "Free"],
+              "license": "MIT"
+            },
+            {
               "title": "Unity Editor Icons",
               "url": "https://github.com/halak/unity-editor-icons",
-              "description": "Unity Editor Built-in Icons.",
-              "tags": ["Repository", "Free"]
+              "description": "Unity Editor Built-in Icons",
+              "tags": ["Repository", "Free"],
+              "license": "None"
             }
           ]
         },
         {
-          "id": "editor-textures",
+          "id": "editor-textures-tools",
           "name": "Texture Tools",
           "resources": [
             {
               "title": "Baking shaders",
               "url": "https://www.ronja-tutorials.com/post/030-baking-shaders",
-              "description": "Baking shaders into textures tutorial.",
+              "description": "Baking shaders into textures tutorial",
               "tags": ["Site", "Free"]
+            }
+          ]
+        },
+        {
+          "id": "editor-gizmo",
+          "name": "Gizmo",
+          "resources": [
+            {
+              "title": "Fast Gizmos Unity (by sverdegd)",
+              "url": "https://github.com/sverdegd/FastGizmosUnity",
+              "description": "Fast Gizmos is a Unity tool that allows to visualize and customize gizmos quickly",
+              "tags": ["Repository", "Free"],
+              "license": "MIT"
             }
           ]
         }
