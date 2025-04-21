@@ -130,6 +130,13 @@
           "name": "Async Programming",
           "resources": [
             {
+              "title": "UniState",
+              "url": "https://github.com/bazyleu/UniState",
+              "description": "UniState is a modern, high-performance, scalable state machine package for Unity",
+              "tags": ["Repository", "Free"],
+              "license": "MIT"
+            },
+            {
               "title": "UniTask",
               "url": "https://github.com/Cysharp/UniTask",
               "description": "Provides an efficient allocation free async/await integration for Unity",
@@ -182,6 +189,26 @@
               "description": "A grab bag of some of the neat math and physics tricks that Zalo amassed over the last few years, implemented in Unity's C#. You're free to use the code here however you like",
               "tags": ["Repository", "Free"],
               "license": "Unlicense"
+            },
+            {
+              "title": "Unity3D Curves (by gabrielgiordan)",
+              "url": "https://github.com/gabrielgiordan/Unity3D-Curves",
+              "description": "2D curves in polar and Cartesian coordinates, 3D curves, surfaces and fractals for the Unity3D game engine",
+              "tags": ["Repository", "Free"],
+              "license": "Apache 2.0"
+            }
+          ]
+        },
+        {
+          "id": "unity-runtime-sound",
+          "name": "Sound",
+          "resources": [
+            {
+              "title": "VLC Unity",
+              "url": "https://github.com/videolan/vlc-unity",
+              "description": "LibVLC plugin for Unity to integrate multimedia playback inside your Unity apps and games",
+              "tags": ["Repository", "Free"],
+              "license": "LGPL v2.1"
             }
           ]
         },

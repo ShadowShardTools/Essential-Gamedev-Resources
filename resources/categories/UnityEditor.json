@@ -26,6 +26,13 @@
               "description": "A set of scripts to reduce the complexity of Polygon2D and Edge Colliders in Unity",
               "tags": ["Repository", "Free"],
               "license": "MIT"
+            },
+            {
+              "title": "Sprite Dicing",
+              "url": "https://github.com/elringus/sprite-dicing",
+              "description": "Cross-engine tool for lossless compression of sprites with identical areas",
+              "tags": ["Repository", "Free"],
+              "license": "MIT"
             }
           ]
         },
@@ -45,6 +52,20 @@
               "url": "https://assetstore.unity.com/packages/tools/physics/easy-collider-311864",
               "description": "Add, Remove & Preview Colliders with Ease",
               "tags": ["Site", "Free"]
+            },
+            {
+              "title": "Curve Modifier (by leon196)",
+              "url": "https://github.com/leon196/CurveModifier",
+              "description": "Implementation of the curve modifier from Blender to Unity3D",
+              "tags": ["Repository", "Free"],
+              "license": "GPL 3.0"
+            },
+            {
+              "title": "Deform",
+              "url": "https://github.com/keenanwoodall/Deform",
+              "description": "A fully-featured deformer system for Unity that lets you stack effects to animate models in real-time",
+              "tags": ["Repository", "Free"],
+              "license": "MIT"
             }
           ]
         },
@@ -97,7 +118,8 @@
               "title": "Unity Editor Icons",
               "url": "https://github.com/halak/unity-editor-icons",
               "description": "Unity Editor Built-in Icons",
-              "tags": ["Repository", "Free"]
+              "tags": ["Repository", "Free"],
+              "license": "None"
             }
           ]
         },
@@ -110,6 +132,19 @@
               "url": "https://www.ronja-tutorials.com/post/030-baking-shaders",
               "description": "Baking shaders into textures tutorial",
               "tags": ["Site", "Free"]
+            }
+          ]
+        },
+        {
+          "id": "editor-gizmo",
+          "name": "Gizmo",
+          "resources": [
+            {
+              "title": "Fast Gizmos Unity (by sverdegd)",
+              "url": "https://github.com/sverdegd/FastGizmosUnity",
+              "description": "Fast Gizmos is a Unity tool that allows to visualize and customize gizmos quickly",
+              "tags": ["Repository", "Free"],
+              "license": "MIT"
             }
           ]
         }
