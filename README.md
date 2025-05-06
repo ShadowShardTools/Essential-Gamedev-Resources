@@ -1,5 +1,7 @@
 # Essential GameDev Resources #
 A curated collection of resources for game developers, organized by category and subcategory for easy navigation.
+![image](https://github.com/user-attachments/assets/ccaf418e-38e2-49a6-aa2f-d8488b06bf39)
+
 
 ## 📋 Overview
 This project provides a sleek, dark-themed web interface that organizes helpful resources for game developers. Resources are categorized by topic, making it easy to find tutorials, tools, and references for specific aspects of game development.
